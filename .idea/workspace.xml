@@ -15,107 +15,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="652659cf-4b74-429d-8e5e-61851e29736d" name="Default" comment="..">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/compiler-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/bg_BG/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/cz_CS/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/de_DE/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/dn_DN/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/el_EL/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/en_US/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/es_ES/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/fi_FN/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/fr_FR/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/he_IL/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/hu_HU/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/it_IT/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/nl_NL/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pl_PL/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pt_BR/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pt_PT/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pv_FN/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/ru_RU/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/se_SE/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/tr_TR/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/zh_CN/DocViewer.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/zh_CN/FlexPaper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/module_docviewerflex.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/AuxFunctions.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/Equations.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/PropertyInfoObj.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialProperty.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialPropertyModifier.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialPropertySplitter.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/TweenListObj.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/Tweener.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/ColorShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/CurveModifiers.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/DisplayShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/FilterShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/SoundShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/TextShortcuts.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowBox.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowLayout.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowTwoPage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowVBox.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/MatrixTransformer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/ZoomCanvas.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FitModeEnum.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperPlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperPluginControl.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperViewModePlugin.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/PrintRangeDialog.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/ShapeMarker.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/ViewModeEnum.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/styles/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/FullscreenHandler.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/StreamUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/TextMapUtil.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/CurrentPageChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/CursorModeChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/DocumentLoadedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/DocumentPrintedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ErrorLoadingPageEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ExternalLinkClickedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/FitModeChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/PageLoadedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/PageLoadingEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ScaleChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/SelectionCreatedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/SwfLoadedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ViewModeChangedEvent.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientBackground.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientHSlider.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientImageButton.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientLabel.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientTextInput.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IDocumentLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IGenericDocument.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IGenericMovieClip.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/SwfDocument.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/utils/StringUtils.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/utils/security/XXTEA.as" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docviewerflex.backup/docviewerflex.iml" afterPath="$PROJECT_DIR$/docviewerflex/docviewerflex.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/web/resources/flex/docviewer.swf" afterPath="$PROJECT_DIR$/docviewer/web/resources/flex/docviewer.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" afterPath="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/Viewer.as" afterPath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/Viewer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" afterPath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex.backup/src/com/log4ic/utils/security/Security.as" afterPath="$PROJECT_DIR$/docviewerflex.backup/src/com/log4ic/utils/security/Security.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" afterPath="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
     </list>
     <ignored path="docviwer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -177,7 +87,70 @@
       <file leaf-file-name="Viewer.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1302" column="9" selection-start="51055" selection-end="51055" vertical-scroll-proportion="-5.12">
+            <state line="576" column="0" selection-start="18400" selection-end="18400" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Binding.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/binding/Binding.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="413" column="0" selection-start="11913" selection-end="11913" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Viewer.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/Viewer.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexPaperViewer_Base.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="28" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IFlexPaperPlugin.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/IFlexPaperPlugin.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexPaperViewer.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="15" selection-start="5576" selection-end="5576" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamUtil.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/StreamUtil.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DupLoader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupLoader.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,15 +168,8 @@
       <file leaf-file-name="About.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.0833335">
-              <folding>
-                <marker date="1319771992000" expanded="true" signature="232:238" placeholder="{...}" />
-                <marker date="1319771992000" expanded="true" signature="333:428" placeholder="..." />
-                <marker date="1319771992000" expanded="true" signature="461:538" placeholder="{...}" />
-                <marker date="1319771992000" expanded="true" signature="589:636" placeholder="{...}" />
-                <marker date="1319771992000" expanded="true" signature="717:748" placeholder="{...}" />
-                <marker date="1319771992000" expanded="true" signature="1231:1309" placeholder="{...}" />
-              </folding>
+            <state line="24" column="30" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,10 +183,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoPagePlugin.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TwoPagePlugin.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="13" selection-start="3108" selection-end="3108" vertical-scroll-proportion="0.27124774">
+            <state line="87" column="32" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,66 +204,8 @@
       <file leaf-file-name="FlexPaperViewer.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="40" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-5.3333335">
-              <folding>
-                <marker date="1319771981000" expanded="true" signature="120:142" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="1142:1404" placeholder="..." />
-                <marker date="1319771981000" expanded="true" signature="1541:1566" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="1620:1779" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="1848:1902" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="1973:2139" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="2214:2447" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="2523:2757" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="2823:2853" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="2927:3017" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3094:3142" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3211:3366" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3266:3326" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3432:3619" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3686:3821" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="3889:4047" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="4141:4281" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="4338:4465" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="4523:4666" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="4752:4848" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="4909:5078" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="5427:5444" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="5768:5798" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="6094:6123" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="6414:6440" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="6820:6867" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="7181:7228" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="7684:7706" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="7716:7735" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="7784:7793" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="8224:8244" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="8696:8715" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="9096:9112" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="9300:9324" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="10002:10018" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="10421:10452" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="10769:10801" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="11194:11217" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="11554:11588" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12145:12161" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12630:12658" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12686:12713" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12744:12777" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12800:12830" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12868:12903" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12930:12969" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="12993:13014" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13040:13063" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13090:13114" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13141:13165" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13194:13220" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13251:13286" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13314:13343" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13365:13394" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13417:13447" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="13475:13510" placeholder="{...}" />
-                <marker date="1319771981000" expanded="true" signature="14013:14045" placeholder="{...}" />
-              </folding>
+            <state line="53" column="13" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -305,82 +213,164 @@
       <file leaf-file-name="FlexPaperViewer_Base.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.333333">
+            <state line="403" column="51" selection-start="13593" selection-end="13593" vertical-scroll-proportion="-2.3333333">
               <folding>
-                <marker date="1319771967000" expanded="true" signature="289:311" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="340:346" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="372:381" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="427:1318" placeholder="..." />
-                <marker date="1319771967000" expanded="true" signature="3299:3335" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="3377:3614" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="3653:3724" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="3781:5144" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="4210:4457" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="4521:4815" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="4844:5134" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5192:5239" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5286:5333" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5375:5443" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5485:5553" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5602:5651" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5706:5752" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="5801:5957" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6014:6124" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6175:6594" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6204:6584" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6246:6504" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6510:6570" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6654:6869" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6941:7496" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="6997:7077" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7135:7212" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7263:7341" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7347:7406" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7563:7714" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7767:8009" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7796:7999" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7818:7953" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="7966:7985" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8062:10097" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8080:10044" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8126:8858" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8305:8434" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8489:8840" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="8864:10030" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10071:10087" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10139:10181" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10224:10267" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10317:10360" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10434:10479" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10557:10602" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10682:10727" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10810:10855" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="10939:10984" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11079:11124" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11212:11257" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11325:11370" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11441:11486" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11571:11616" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11685:11730" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11800:11845" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="11937:11982" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12033:12077" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12132:12180" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12229:12278" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12338:12391" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12453:12501" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12564:12788" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12614:12678" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12713:12778" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="12847:12953" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="13002:13045" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="13105:13534" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="13600:13645" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="13698:13744" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="13800:14263" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="14311:14352" placeholder="{...}" />
-                <marker date="1319771967000" expanded="true" signature="14410:14452" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="289:311" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="289:311" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="340:346" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="340:346" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="372:381" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="372:381" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="427:1480" placeholder="..." />
+                <marker date="1319784191000" expanded="false" signature="427:1480" placeholder="..." />
+                <marker date="1319784191000" expanded="true" signature="3461:3497" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3461:3497" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3539:3776" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3539:3776" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3815:3886" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3815:3886" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3943:5306" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="3943:5306" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="4372:4619" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="4372:4619" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="4683:4977" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="4683:4977" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5006:5296" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5006:5296" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5354:5401" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5354:5401" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5448:5495" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5448:5495" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5537:5605" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5537:5605" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5647:5715" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5647:5715" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5764:5813" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5764:5813" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5868:5914" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5868:5914" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5963:6119" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="5963:6119" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6176:6286" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6176:6286" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6337:6756" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6337:6756" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6366:6746" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6366:6746" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6408:6666" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6408:6666" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6672:6732" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6672:6732" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6816:7031" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="6816:7031" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7103:7658" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7103:7658" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7159:7239" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7159:7239" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7297:7374" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7297:7374" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7425:7503" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7425:7503" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7509:7568" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7509:7568" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7725:7876" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7725:7876" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7929:8171" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7929:8171" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7958:8161" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7958:8161" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7980:8115" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="7980:8115" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8128:8147" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8128:8147" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8224:10259" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8224:10259" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8242:10206" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8242:10206" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8288:9020" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8288:9020" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8467:8596" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8467:8596" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8651:9002" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="8651:9002" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="9026:10192" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="9026:10192" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10233:10249" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10233:10249" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10301:10343" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10301:10343" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10386:10429" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10386:10429" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10479:10522" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10479:10522" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10596:10641" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10596:10641" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10719:10764" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10719:10764" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10844:10889" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10844:10889" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10972:11017" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="10972:11017" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11101:11146" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11101:11146" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11241:11286" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11241:11286" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11374:11419" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11374:11419" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11487:11532" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11487:11532" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11603:11648" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11603:11648" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11733:11778" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11733:11778" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11847:11892" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11847:11892" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11962:12007" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="11962:12007" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12099:12144" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12099:12144" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12195:12239" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12195:12239" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12294:12342" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12294:12342" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12391:12440" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12391:12440" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12500:12553" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12500:12553" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12615:12663" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12615:12663" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12726:12950" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12726:12950" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12776:12840" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12776:12840" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12875:12940" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="12875:12940" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13009:13115" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13009:13115" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13164:13207" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13164:13207" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13267:13696" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13267:13696" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13762:13807" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13762:13807" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13860:13906" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13860:13906" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13962:14425" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="13962:14425" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="14473:14514" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="14473:14514" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="14572:14614" placeholder="{...}" />
+                <marker date="1319784191000" expanded="true" signature="14572:14614" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIComponent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/core/UIComponent.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7623" column="0" selection-start="237184" selection-end="237184" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -388,7 +378,7 @@
       <file leaf-file-name="IDocumentLoader.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IDocumentLoader.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="501" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="501" selection-end="504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -397,7 +387,7 @@
       <file leaf-file-name="EncryptedLoader.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+            <state line="37" column="0" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -406,16 +396,7 @@
       <file leaf-file-name="AVM2Loader.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="35" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GradientTextInput.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientTextInput.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="5" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
+            <state line="101" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -430,19 +411,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DupImage.as" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DupImage.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="34" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DupImage.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/streaming/DupImage.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.8">
+            <state line="198" column="8" selection-start="5528" selection-end="5528" vertical-scroll-proportion="0.32038835">
               <folding />
             </state>
           </provider>
@@ -451,19 +423,20 @@
       <file leaf-file-name="DocViewerFlex.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="49" selection-start="1939" selection-end="1939" vertical-scroll-proportion="-11.5">
+            <state line="139" column="20" selection-start="4396" selection-end="4396" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1319768665000" expanded="true" signature="374:384" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="1849:3358" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="3416:3505" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="3568:3624" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="3634:3708" placeholder="/** ...*/" />
-                <marker date="1319768665000" expanded="true" signature="3791:3917" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="3831:3883" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="4001:4127" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="4041:4093" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="4214:4388" placeholder="{...}" />
-                <marker date="1319768665000" expanded="true" signature="4292:4354" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="324:334" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="1799:3314" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3119:3303" placeholder="//..." />
+                <marker date="1319781405000" expanded="true" signature="3372:3461" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3524:3580" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3590:3664" placeholder="/** ...*/" />
+                <marker date="1319781405000" expanded="true" signature="3747:3873" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3787:3839" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3957:4083" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="3997:4049" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="4170:4344" placeholder="{...}" />
+                <marker date="1319781405000" expanded="true" signature="4248:4310" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -514,18 +487,18 @@
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
         <option value="$PROJECT_DIR$/docviewerflex.backup/src/com/log4ic/utils/security/Security.as" />
         <option value="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
         <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as" />
         <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as" />
         <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as" />
         <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/style/MenuIcons.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
         <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as" />
       </list>
     </option>
   </component>
@@ -607,7 +580,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -615,6 +587,152 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="docviwer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex.backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flexpaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -660,6 +778,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="log4ic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log4ic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,6 +858,32 @@
               <option name="myItemId" value="devaldi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -734,6 +908,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devaldi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flexpaper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -831,21 +1035,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="79" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="96" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="85" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="102" />
@@ -862,14 +1067,14 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -884,10 +1089,12 @@
       <recent name="$PROJECT_DIR$/docviewer/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.docviwer">
-    <configuration default="false" name="DocViewerFlex" type="FlexRunConfigurationType" factoryName="Flex" temporary="true" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="$PROJECT_DIR$/out/production/docviewerflex/_DocViewerFlex.swf" launcher_type="Player" main_class_name="DocViewerFlex" module_name="docviewerflex" player_path="$USER_HOME$/Program/flex_sdk_4.5.1.21328/runtimes/player/10.2/lnx/flashplayerdebugger" run_mode="MainClass" run_trusted="true" url_to_launch="http://">
+  <component name="RunManager" selected="Flex.unnamed">
+    <configuration default="false" name="unnamed" type="FlexRunConfigurationType" factoryName="Flex" temporary="true" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="$PROJECT_DIR$/out/production/docviewerflex/_DocViewerFlex.swf" launcher_type="Player" main_class_name="DocViewerFlex" module_name="docviewerflex" player_path="$USER_HOME$/Program/flex_sdk_4.5.1.21328/runtimes/player/10.2/lnx/flashplayerdebugger" run_mode="ConnectToRunningFlashPlayer" run_trusted="false" url_to_launch="http://">
       <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -920,6 +1127,15 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="FlexRunConfigurationType" factoryName="Flex" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" module_name="" player_path="/usr/bin/flashplayerdebugger" run_mode="HtmlOrSwfFile" run_trusted="false" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -931,15 +1147,6 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlexRunConfigurationType" factoryName="Flex" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" module_name="" player_path="/usr/bin/flashplayerdebugger" run_mode="HtmlOrSwfFile" run_trusted="false" url_to_launch="http://">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -965,30 +1172,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="PhingTarget" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false">
-          <server_id />
-          <server_name />
-        </option>
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="PhingTarget" enabled="false" />
       </method>
@@ -1020,26 +1203,26 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <server-settings>
-        <option name="DEPLOY_TOMCAT_APPS" value="false" />
-        <option name="BASE_DIRECTORY_NAME" value="_docviwer_2" />
-      </server-settings>
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-      <extension name="coverage" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="33216" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="PhingTarget" enabled="false" />
       </method>
@@ -1090,6 +1273,30 @@
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <server-settings>
+        <option name="DEPLOY_TOMCAT_APPS" value="false" />
+        <option name="BASE_DIRECTORY_NAME" value="_docviwer_2" />
+      </server-settings>
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <extension name="coverage" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="33216" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1157,7 +1364,7 @@
       </method>
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Flex.DocViewerFlex" />
+      <item index="0" class="java.lang.String" itemvalue="Flex.unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.docviwer" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1183,24 +1390,6 @@
     <option name="FORCE_UPDATE" value="false" />
     <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$USER_HOME$/Desktop/FlexPaper" />
-          <option name="myCopyRoot" value="$USER_HOME$/Desktop/FlexPaper" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$USER_HOME$/Desktop/FlexPaper" />
-          <option name="myCopyRoot" value="$USER_HOME$/Desktop/FlexPaper" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1237,23 +1426,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.58678955" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49308756" sideWeight="0.99240124" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42396313" sideWeight="0.99240124" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3558776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3548387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902735" sideWeight="0.67127496" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522798" sideWeight="0.6605223" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522798" sideWeight="0.6451613" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1346,366 +1535,306 @@
     </GetOptions>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as</url>
+          <line>238</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as</url>
+          <line>151</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml</url>
+          <line>397</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as</url>
+          <line>576</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as</url>
+          <line>219</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as</url>
+          <line>101</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientHSlider.as">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3180212">
+        <state line="87" column="32" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientBackground.as">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.97649187">
+        <state line="29" column="53" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.657845">
+        <state line="53" column="13" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/core/UIComponent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7623" column="0" selection-start="237184" selection-end="237184" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IDocumentLoader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="501" selection-end="504" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="34" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="20" selection-start="4396" selection-end="4396" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="324:334" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="1799:3314" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3119:3303" placeholder="//..." />
+            <marker date="1319781405000" expanded="true" signature="3372:3461" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3524:3580" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3590:3664" placeholder="/** ...*/" />
+            <marker date="1319781405000" expanded="true" signature="3747:3873" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3787:3839" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3957:4083" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="3997:4049" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="4170:4344" placeholder="{...}" />
+            <marker date="1319781405000" expanded="true" signature="4248:4310" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientTextInput.as">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
+        <state line="118" column="71" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/streaming/DupImage.as">
+    <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/styles/StyleManager.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.8">
+        <state line="40" column="25" selection-start="1202" selection-end="1214" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as">
+    <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/styles/IStyleManager2.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="34" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/resources/grab.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../flexpaper/FlexPaper/lib/FlexPaper_Resources.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="19" selection-start="5668" selection-end="7574" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1302" column="9" selection-start="51055" selection-end="51055" vertical-scroll-proportion="-5.12">
+        <state line="576" column="0" selection-start="18400" selection-end="18400" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.333333">
+        <state line="403" column="51" selection-start="13593" selection-end="13593" vertical-scroll-proportion="-2.3333333">
           <folding>
-            <marker date="1319771967000" expanded="true" signature="289:311" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="340:346" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="372:381" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="427:1318" placeholder="..." />
-            <marker date="1319771967000" expanded="true" signature="3299:3335" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="3377:3614" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="3653:3724" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="3781:5144" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="4210:4457" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="4521:4815" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="4844:5134" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5192:5239" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5286:5333" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5375:5443" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5485:5553" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5602:5651" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5706:5752" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="5801:5957" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6014:6124" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6175:6594" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6204:6584" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6246:6504" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6510:6570" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6654:6869" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6941:7496" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="6997:7077" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7135:7212" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7263:7341" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7347:7406" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7563:7714" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7767:8009" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7796:7999" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7818:7953" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="7966:7985" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8062:10097" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8080:10044" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8126:8858" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8305:8434" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8489:8840" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="8864:10030" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10071:10087" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10139:10181" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10224:10267" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10317:10360" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10434:10479" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10557:10602" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10682:10727" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10810:10855" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="10939:10984" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11079:11124" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11212:11257" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11325:11370" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11441:11486" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11571:11616" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11685:11730" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11800:11845" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="11937:11982" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12033:12077" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12132:12180" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12229:12278" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12338:12391" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12453:12501" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12564:12788" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12614:12678" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12713:12778" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="12847:12953" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="13002:13045" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="13105:13534" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="13600:13645" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="13698:13744" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="13800:14263" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="14311:14352" placeholder="{...}" />
-            <marker date="1319771967000" expanded="true" signature="14410:14452" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="289:311" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="289:311" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="340:346" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="340:346" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="372:381" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="372:381" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="427:1480" placeholder="..." />
+            <marker date="1319784191000" expanded="false" signature="427:1480" placeholder="..." />
+            <marker date="1319784191000" expanded="true" signature="3461:3497" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3461:3497" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3539:3776" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3539:3776" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3815:3886" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3815:3886" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3943:5306" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="3943:5306" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="4372:4619" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="4372:4619" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="4683:4977" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="4683:4977" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5006:5296" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5006:5296" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5354:5401" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5354:5401" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5448:5495" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5448:5495" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5537:5605" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5537:5605" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5647:5715" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5647:5715" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5764:5813" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5764:5813" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5868:5914" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5868:5914" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5963:6119" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="5963:6119" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6176:6286" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6176:6286" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6337:6756" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6337:6756" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6366:6746" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6366:6746" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6408:6666" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6408:6666" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6672:6732" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6672:6732" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6816:7031" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="6816:7031" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7103:7658" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7103:7658" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7159:7239" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7159:7239" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7297:7374" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7297:7374" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7425:7503" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7425:7503" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7509:7568" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7509:7568" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7725:7876" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7725:7876" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7929:8171" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7929:8171" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7958:8161" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7958:8161" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7980:8115" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="7980:8115" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8128:8147" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8128:8147" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8224:10259" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8224:10259" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8242:10206" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8242:10206" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8288:9020" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8288:9020" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8467:8596" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8467:8596" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8651:9002" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="8651:9002" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="9026:10192" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="9026:10192" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10233:10249" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10233:10249" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10301:10343" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10301:10343" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10386:10429" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10386:10429" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10479:10522" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10479:10522" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10596:10641" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10596:10641" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10719:10764" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10719:10764" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10844:10889" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10844:10889" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10972:11017" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="10972:11017" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11101:11146" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11101:11146" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11241:11286" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11241:11286" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11374:11419" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11374:11419" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11487:11532" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11487:11532" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11603:11648" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11603:11648" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11733:11778" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11733:11778" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11847:11892" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11847:11892" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11962:12007" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="11962:12007" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12099:12144" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12099:12144" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12195:12239" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12195:12239" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12294:12342" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12294:12342" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12391:12440" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12391:12440" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12500:12553" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12500:12553" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12615:12663" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12615:12663" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12726:12950" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12726:12950" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12776:12840" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12776:12840" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12875:12940" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="12875:12940" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13009:13115" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13009:13115" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13164:13207" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13164:13207" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13267:13696" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13267:13696" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13762:13807" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13762:13807" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13860:13906" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13860:13906" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13962:14425" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="13962:14425" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="14473:14514" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="14473:14514" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="14572:14614" placeholder="{...}" />
+            <marker date="1319784191000" expanded="true" signature="14572:14614" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/StreamUtil.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-5.3333335">
-          <folding>
-            <marker date="1319771981000" expanded="true" signature="120:142" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="1142:1404" placeholder="..." />
-            <marker date="1319771981000" expanded="true" signature="1541:1566" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="1620:1779" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="1848:1902" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="1973:2139" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="2214:2447" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="2523:2757" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="2823:2853" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="2927:3017" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3094:3142" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3211:3366" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3266:3326" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3432:3619" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3686:3821" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="3889:4047" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="4141:4281" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="4338:4465" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="4523:4666" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="4752:4848" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="4909:5078" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="5427:5444" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="5768:5798" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="6094:6123" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="6414:6440" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="6820:6867" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="7181:7228" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="7684:7706" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="7716:7735" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="7784:7793" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="8224:8244" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="8696:8715" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="9096:9112" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="9300:9324" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="10002:10018" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="10421:10452" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="10769:10801" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="11194:11217" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="11554:11588" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12145:12161" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12630:12658" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12686:12713" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12744:12777" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12800:12830" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12868:12903" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12930:12969" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="12993:13014" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13040:13063" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13090:13114" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13141:13165" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13194:13220" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13251:13286" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13314:13343" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13365:13394" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13417:13447" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="13475:13510" placeholder="{...}" />
-            <marker date="1319771981000" expanded="true" signature="14013:14045" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.0833335">
-          <folding>
-            <marker date="1319771992000" expanded="true" signature="232:238" placeholder="{...}" />
-            <marker date="1319771992000" expanded="true" signature="333:428" placeholder="..." />
-            <marker date="1319771992000" expanded="true" signature="461:538" placeholder="{...}" />
-            <marker date="1319771992000" expanded="true" signature="589:636" placeholder="{...}" />
-            <marker date="1319771992000" expanded="true" signature="717:748" placeholder="{...}" />
-            <marker date="1319771992000" expanded="true" signature="1231:1309" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+        <state line="10" column="26" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="334" column="19" selection-start="9831" selection-end="9831" vertical-scroll-proportion="0.3647059">
-          <folding>
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/Viewer.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="45" selection-start="5548" selection-end="5548" vertical-scroll-proportion="0.4494382">
+        <state line="101" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as">
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="13" selection-start="3108" selection-end="3108" vertical-scroll-proportion="0.27124774">
+        <state line="198" column="8" selection-start="5528" selection-end="5528" vertical-scroll-proportion="0.32038835">
           <folding />
         </state>
       </provider>
@@ -1769,6 +1898,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

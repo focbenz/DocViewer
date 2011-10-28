@@ -5,7 +5,6 @@
                          xmlns:fp="com.devaldi.controls.flexpaper.*"
                          xmlns:ct="com.devaldi.controls.*"
                          xmlns:st="com.devaldi.skinning.*"
-                         xmlns:containers="mx.containers.*"
                          addedToStage="bindStageEvents(event)"
         >
     <fx:Metadata>

@@ -26,32 +26,32 @@ public class Security {
 
     public static function loadEncryptedFile(url:URLRequest, key:String, onComplete:Function, onProgress:Function):void {
 
-        var loader:EncryptedLoader = loaderMap[url.url];
-
-        if (loader) {
-            loader.removeEventListener(Event.COMPLETE, onComplete);
-            loader.addEventListener(Event.COMPLETE, onComplete);
-            if (loader.loaded) {
-                loader.dispatchEvent(new Event(Event.COMPLETE));
-            }
-            return;
-        }
-        var keyBytes:ByteArray = null;
-        if (key) {
-            keyBytes = new ByteArray();
-            keyBytes.writeUTFBytes(key);
-        }
-
-        var urlLoader:EncryptedLoader = new EncryptedLoader(keyBytes);
-
-        urlLoader.addEventListener(Event.COMPLETE, onComplete);
-        if (onProgress) {
-            urlLoader.addEventListener(ProgressEvent.PROGRESS, onProgress);
-        }
-
-        loaderMap[url.url] = urlLoader;
-
-        urlLoader.load(url);
+//        var loader:EncryptedLoader = loaderMap[url.url];
+//
+//        if (loader) {
+//            loader.removeEventListener(Event.COMPLETE, onComplete);
+//            loader.addEventListener(Event.COMPLETE, onComplete);
+//            if (loader.loaded) {
+//                loader.dispatchEvent(new Event(Event.COMPLETE));
+//            }
+//            return;
+//        }
+//        var keyBytes:ByteArray = null;
+//        if (key) {
+//            keyBytes = new ByteArray();
+//            keyBytes.writeUTFBytes(key);
+//        }
+//
+//        var urlLoader:EncryptedLoader = new EncryptedLoader(keyBytes);
+//
+//        urlLoader.addEventListener(Event.COMPLETE, onComplete);
+//        if (onProgress) {
+//            urlLoader.addEventListener(ProgressEvent.PROGRESS, onProgress);
+//        }
+//
+//        loaderMap[url.url] = urlLoader;
+//
+//        urlLoader.load(url);
     }
 
     public static function isLoaded(url:URLRequest) {

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/docviewer/docviewer.iml" filepath="$PROJECT_DIR$/docviewer/docviewer.iml" />
       <module fileurl="file://$PROJECT_DIR$/docviewerapi/docviewerapi.iml" filepath="$PROJECT_DIR$/docviewerapi/docviewerapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/docviewerflex/docviewerflex.iml" filepath="$PROJECT_DIR$/docviewerflex/docviewerflex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docviewerflex.backup/docviewerflex.backup.iml" filepath="$PROJECT_DIR$/docviewerflex.backup/docviewerflex.backup.iml" />
     </modules>
   </component>
 </project>
