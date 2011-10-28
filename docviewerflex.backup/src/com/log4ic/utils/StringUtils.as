@@ -2,7 +2,7 @@
  * @author: 张立鑫
  * @version: 1
  */
-package com.sinitek.log4ic.utils {
+package com.log4ic.utils {
 public class StringUtils {
     //忽略大小字母比较字符是否相等;
     public static function equalsIgnoreCase(char1:String, char2:String):Boolean {

@@ -2,7 +2,7 @@
  * @author: 张立鑫
  * @version: 1
  */
-package com.sinitek.log4ic.streaming {
+package com.log4ic.streaming {
 import com.sinitek.log4ic.utils.security.XXTEA;
 
 import flash.events.Event;

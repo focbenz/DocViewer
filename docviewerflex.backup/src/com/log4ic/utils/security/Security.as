@@ -2,7 +2,7 @@
  * @author: 张立鑫
  * @version: 1
  */
-package com.sinitek.log4ic.utils.security {
+package com.log4ic.utils.security {
 import com.sinitek.log4ic.streaming.EncryptedLoader;
 
 import flash.events.Event;

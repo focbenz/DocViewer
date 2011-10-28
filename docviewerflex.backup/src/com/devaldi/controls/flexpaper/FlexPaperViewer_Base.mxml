@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
          width="100%"
          height="100%"
-         verticalGap="0"
-         borderColor="#8a8a8a"
-
-         verticalScrollPolicy="off"
-         horizontalScrollPolicy="off"
 
          addedToStage="bindStageEvents(event)"
          preinitialize="preInit()">
-    <mx:Script>
+    <fx:Script>
 		<![CDATA[
         import com.devaldi.controls.TwoPagePlugin;
         import com.devaldi.controls.flexpaper.utils.StreamUtil;
@@ -450,5 +447,5 @@
             SecretKey = value;
         }
         ]]>
-	</mx:Script>
-</mx:VBox>
+	</fx:Script>
+</s:VGroup>
