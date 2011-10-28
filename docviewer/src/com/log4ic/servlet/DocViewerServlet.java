@@ -31,7 +31,7 @@ public class DocViewerServlet extends HttpServlet {
                 return;
             }
 
-
+            
             int docId = Integer.parseInt(id);
             LOGGER.info("获取文档权限...");
             Permissions permissions = DocViewer.getAttachmentService().getDocPermissionsById(docId, request);

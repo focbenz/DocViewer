@@ -1,28 +1,10 @@
-/* 
- Copyright 2009 Erik Engström
-
- This file is part of FlexPaper.
-
- FlexPaper is free software: you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation, version 3 of the License.
-
- FlexPaper is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License
- along with FlexPaper.  If not, see <http://www.gnu.org/licenses/>.	
- */
-
 package com.devaldi.controls.flexpaper {
 import caurina.transitions.Tweener;
 
 import com.devaldi.controls.FlowBox;
 import com.devaldi.controls.FlowVBox;
 import com.devaldi.controls.ZoomCanvas;
-import com.devaldi.controls.flexpaper.resources.MenuIcons;
+import com.log4ic.resources.MenuIcons;
 import com.devaldi.controls.flexpaper.utils.StreamUtil;
 import com.devaldi.controls.flexpaper.utils.TextMapUtil;
 import com.devaldi.events.CurrentPageChangedEvent;
@@ -43,8 +25,7 @@ import com.devaldi.streaming.DupLoader;
 import com.devaldi.streaming.IDocumentLoader;
 import com.devaldi.streaming.IGenericDocument;
 import com.devaldi.streaming.SwfDocument;
-import com.log4ic.utils.security.Security;
-import com.sinitek.log4ic.utils.security.Security;
+import com.log4ic.streaming.EncryptedLoader;
 
 import flash.display.AVM1Movie;
 import flash.display.Bitmap;
@@ -73,9 +54,9 @@ import flash.utils.Timer;
 import flash.utils.setTimeout;
 
 import mx.containers.Canvas;
-import mx.controls.Alert;
 import mx.controls.Image;
 import mx.core.Container;
+import mx.core.SpriteAsset;
 import mx.core.UIComponent;
 import mx.events.FlexEvent;
 import mx.managers.CursorManager;
@@ -97,13 +78,12 @@ import mx.rpc.http.HTTPService;
 [Event(name="onFitModeChanged", type="com.devaldi.events.FitModeChangedEvent")]
 [Event(name="onCursorModeChanged", type="com.devaldi.events.CursorModeChangedEvent")]
 [Event(name="onDocumentLoadedError", type="flash.events.ErrorEvent")]
-//[Event(name="onLogoClicked", type="flash.events.Event")]
+[Event(name="onLogoClicked", type="flash.events.Event")]
 [Event(name="onSelectionCreated", type="com.devaldi.events.SelectionCreatedEvent")]
 [Event(name="onDocumentPrinted", type="com.devaldi.events.DocumentPrintedEvent")]
 [Event(name="onErrorLoadingPage", type="com.devaldi.events.ErrorLoadingPageEvent")]
 
 public class Viewer extends Canvas {
-    private var _secretKey:String = null;
     private var _swfFile:String = "";
     private var _swfFileChanged:Boolean = false;
     private var _initialized:Boolean = false;
@@ -142,6 +122,7 @@ public class Viewer extends Canvas {
     private var _grabCursorID:Number = 0;
     private var _grabbingCursorID:Number = 0;
     private var _pluginList:Array;
+    [Bindable]
     public static var ViewModeExtList:Array;
     private var _currentExtViewMode:IFlexPaperViewModePlugin;
     private var _minZoomSize:Number = 0.3;
@@ -150,10 +131,8 @@ public class Viewer extends Canvas {
     private var _searchServiceUrl:String = "";
     private var _performSearchOnPageLoad:Boolean = false;
     private var _pendingSearchPage:int = -1;
-    private var _skinImg:Bitmap = new MenuIcons.SMALL_TRANSPARENT();
-    private var _skinImgc:Bitmap = new MenuIcons.SMALL_TRANSPARENT_COLOR();
-
-
+//    private var _skinImg:Bitmap = new MenuIcons.SMALL_TRANSPARENT();
+//    private var _skinImgc:Bitmap = new MenuIcons.SMALL_TRANSPARENT_COLOR();
 //    private var _skinImgDo:Image;
 
     public function Viewer() {
@@ -469,12 +448,12 @@ public class Viewer extends Canvas {
             else
                 _adjGotoPage = 0;
 
-            repaint();
+            repositionPapers();
         }
     }
 
-    public function mvNext(extmode:Boolean = true):void {
-        if (UsingExtViewMode && extmode)
+    public function mvNext():void {
+        if (UsingExtViewMode)
             CurrExtViewMode.mvNext();
         else
         if (currPage < numPages) {
@@ -482,8 +461,8 @@ public class Viewer extends Canvas {
         }
     }
 
-    public function mvPrev(extmode:Boolean = true):void {
-        if (UsingExtViewMode && extmode)
+    public function mvPrev():void {
+        if (UsingExtViewMode)
             CurrExtViewMode.mvPrev();
         else {
             if (currPage > 1) {
@@ -529,54 +508,6 @@ public class Viewer extends Canvas {
         fileName = TextMapUtil.StringReplaceAll(fileName, map, padString(page.toString(), padding, "0"));
 
         return encodeURI(fileName);
-    }
-
-    public function loadFromBytes(bytes:ByteArray):void {
-        clearPlugins();
-        deleteDisplayContainer();
-        deletePageList();
-        deleteLoaderPtr();
-        deleteLoaderList();
-        deleteFLoader();
-        deleteSelectionMarker();
-        TextMapUtil.totalFragments = "";
-        deleteLibMC();
-
-        _swfFileChanged = true;
-        _frameLoadCount = 0;
-
-        ViewMode = Viewer.InitViewMode;
-
-        try {
-            new flash.net.LocalConnection().connect('devaldiGCdummy');
-            new flash.net.LocalConnection().connect('devaldiGCdummy');
-        } catch (e:*) {
-        }
-
-        try {
-            flash.system.System.gc();
-        } catch (e:*) {
-        }
-
-        if (_docLoader != null && !_docLoader.hasEventListener(SwfLoadedEvent.SWFLOADED)) {
-            _docLoader.addEventListener("onDocumentLoadedError", onDocumentLoadedErrorHandler, false, 0, true);
-            _docLoader.addEventListener(SwfLoadedEvent.SWFLOADED, swfComplete, false, 0, true);
-        }
-
-        if (_docLoader != null) {
-            _docLoader.stream.removeEventListener(ProgressEvent.PROGRESS, onLoadProgress);
-            _docLoader.stream.addEventListener(ProgressEvent.PROGRESS, onLoadProgress, false, 0, true);
-        }
-
-        _docLoader.loadFromBytes(bytes);
-
-        _paperContainer.verticalScrollPosition = 0;
-        createDisplayContainer();
-
-        // Changing the SWF file causes the component to invalidate.
-        invalidateProperties();
-        invalidateSize();
-        invalidateDisplayList();
     }
 
     public function set SwfFile(s:String):void {
@@ -626,7 +557,7 @@ public class Viewer extends Canvas {
             }
 
             if (_docLoader != null && !_docLoader.hasEventListener(SwfLoadedEvent.SWFLOADED)) {
-                _docLoader.IsSplit = pagesSplit;
+                _docLoader.PagesSplit = pagesSplit;
                 _docLoader.addEventListener("onDocumentLoadedError", onDocumentLoadedErrorHandler, false, 0, true);
                 _docLoader.addEventListener(SwfLoadedEvent.SWFLOADED, swfComplete, false, 0, true);
             }
@@ -636,6 +567,15 @@ public class Viewer extends Canvas {
                 _docLoader.stream.addEventListener(ProgressEvent.PROGRESS, onLoadProgress, false, 0, true);
             }
 
+            if (_swfFile.length > 0 && pagesSplit) {
+                _loadTimer = new Timer(100);
+                _loadTimer.addEventListener("timer", loadtimer);
+
+                _docLoader.load(new URLRequest(getSwfFilePerPage(_swfFile, 1)), StreamUtil.getExecutionContext()); //new URLRequest(decodeURI(_swfFile))
+            }
+            else if (_swfFile.length > 0 && !pagesSplit)
+                _docLoader.load(new URLRequest(_swfFile), StreamUtil.getExecutionContext());
+
             _paperContainer.verticalScrollPosition = 0;
             createDisplayContainer();
 
@@ -643,21 +583,6 @@ public class Viewer extends Canvas {
             invalidateProperties();
             invalidateSize();
             invalidateDisplayList();
-
-            var _request:URLRequest;
-
-            if (_swfFile.length > 0 && pagesSplit) {
-                _loadTimer = new Timer(100);
-                _loadTimer.addEventListener("timer", loadtimer);
-                _request = new URLRequest(getSwfFilePerPage(_swfFile, 1));
-            }
-            else if (_swfFile.length > 0 && !pagesSplit) {
-                _request = new URLRequest(_swfFile);
-            }
-
-            Security.loadEncryptedFile(_request, _secretKey, function(e:Event):void {
-                _docLoader.loadFromBytes(_secretKey ? e.target.decryptedData : e.target.data);
-            }, onLoadProgress);
         }
     }
 
@@ -711,9 +636,9 @@ public class Viewer extends Canvas {
         return  (_paperContainer.height / _libMC.height);
     }
 
-    public function fitWidth():Boolean {
+    public function fitWidth():void {
         if (_displayContainer.numChildren == 0) {
-            return false;
+            return;
         }
 
         var _target:DisplayObject;
@@ -730,16 +655,11 @@ public class Viewer extends Canvas {
 
         FitMode = FitModeEnum.FITWIDTH;
         dispatchEvent(new ScaleChangedEvent(ScaleChangedEvent.SCALE_CHANGED, _scale));
-
-        _paperContainer.horizontalScrollPosition = _paperContainer.maxHorizontalScrollPosition / 2;
-        _paperContainer.validateDisplayList();
-
-        return factor > 0;
     }
 
-    public function fitHeight():Boolean {
+    public function fitHeight():void {
         if (_displayContainer.numChildren == 0) {
-            return false;
+            return;
         }
 
         var _target:DisplayObject;
@@ -756,8 +676,6 @@ public class Viewer extends Canvas {
 
         FitMode = FitModeEnum.FITHEIGHT;
         dispatchEvent(new ScaleChangedEvent(ScaleChangedEvent.SCALE_CHANGED, _scale));
-
-        return factor > 0;
     }
 
     private function tweenComplete():void {
@@ -827,7 +745,7 @@ public class Viewer extends Canvas {
             return;
         }
 
-        if (_docLoader != null && _docLoader.IsSplit)
+        if (_docLoader != null && _docLoader.PagesSplit) //todo:links not fixed yet for split up approach
             return;
 
         if (event.target.content != null) {
@@ -844,7 +762,7 @@ public class Viewer extends Canvas {
     private function updComplete(event:Event):void {
         if (_scrollToPage > 0) {
             _paperContainer.verticalScrollPosition = _pageList[_scrollToPage - 1].y;
-            //_paperContainer.horizontalScrollPosition = 0;
+            _paperContainer.horizontalScrollPosition = 0;
             _scrollToPage = 0;
         }
 
@@ -876,7 +794,7 @@ public class Viewer extends Canvas {
         var bFound:Boolean = false;
 
         // Split up approach
-        if (_docLoader != null && _docLoader.IsSplit) {
+        if (_docLoader != null && _docLoader.PagesSplit) {
             event.target.loader.loading = false;
 
             if (event.target.loader.content != null && event.target.loader.content is MovieClip) {
@@ -893,35 +811,35 @@ public class Viewer extends Canvas {
             _frameLoadCount = numPages;
             _bbusyloading = false;
             _displayContainer.visible = true;
+            repaint();
 
             if (!bFound) {
                 dispatchEvent(new PageLoadedEvent(PageLoadedEvent.PAGE_LOADED, event.target.loader.pageStartIndex));
 
-                if (_fitPageOnLoad && ((_paperContainer.height / _libMC.height) > 0)) {
+                if (_fitPageOnLoad) {
                     FitMode = FitModeEnum.FITHEIGHT;
                     _fitPageOnLoad = false;
                     _scrollToPage = 1;
                     _pscale = _scale;
                 }
-                if (_fitWidthOnLoad && ((_paperContainer.width / _libMC.width) > 0)) {
+                if (_fitWidthOnLoad) {
                     FitMode = FitModeEnum.FITWIDTH;
                     _fitWidthOnLoad = false;
                     _scrollToPage = 1;
                     _pscale = _scale;
                 }
-            }
 
-            repaint();
+            }
         } else { // normal file approach
             if (event.target.loader.content != null) {
                 event.target.loader.content.stop();
             }
 
             if (!ProgressiveLoading || (ProgressiveLoading && _libMC.framesLoaded == _libMC.totalFrames)) {
-                for (var i:int = 0; i < _docLoader.LoaderList.length; i++) {
-                    if (!_docLoader.LoaderList[i].loaded && !(_docLoader.LoaderList[i].parent is DupImage)) {
-                        _docLoader.LoaderList[i].unloadAndStop(true);
-                        _docLoader.LoaderList[i].loadBytes(_inputBytes, StreamUtil.getExecutionContext());
+                for (var j:int = 0; j < _docLoader.LoaderList.length; i++) {
+                    if (!_docLoader.LoaderList[j].loaded && !(_docLoader.LoaderList[j].parent is DupImage)) {
+                        _docLoader.LoaderList[j].unloadAndStop(true);
+                        _docLoader.LoaderList[j].loadBytes(_inputBytes, StreamUtil.getExecutionContext());
                         bFound = true;
                         break;
                     }
@@ -956,8 +874,7 @@ public class Viewer extends Canvas {
         if (_docLoader == null) {
             return;
         }
-
-        if (_docLoader.LoaderList == null || numPagesLoaded == 0) {
+        if (_docLoader != null && _docLoader.LoaderList == null || numPagesLoaded == 0) {
             return;
         }
 
@@ -981,24 +898,14 @@ public class Viewer extends Canvas {
                     if (!bFoundFirst) {
                         var perH:int = 0;
                         if (_pageList.length > 1) {
-                            var nowpH:Number = 0;
-                            var nowP:Number = 0;
-
-                            while (_paperContainer.verticalScrollPosition + 1 > nowpH && nowP - 1 < _pageList.length) {
-                                nowP++;
-
-                                if (nowP < _pageList.length)
-                                    nowpH += _pageList[nowP].y - _pageList[nowP - 1].y;
-                                else if (nowP >= _pageList.length)
-                                    nowpH += _pageList[_pageList.length - 1].y - _pageList[_pageList.length - 2].y;
-                            }
-
+                            perH = _pageList[1].y - _pageList[0].y;
+                            var nowP:Number = _paperContainer.verticalScrollPosition / (perH);
                             if (0 < nowP < 0.5)
                                 p = 1;
-                            else if (nowP >= (_pageList.length - 0.5))
+                            else if (nowP >= (_pageList.length - 0.5) && nowP <= _pageList.length)
                                 p = _pageList.length;
                             else {
-                                p = Math.round(nowP);
+                                p = Math.round(nowP) + 1;
                                 if (_pageList.length > p - 1 && _paperContainer.verticalScrollPosition < _pageList[p - 1].y && p != _pageList.length) {
                                     p -= 1;
                                 }
@@ -1032,13 +939,13 @@ public class Viewer extends Canvas {
                     if (_pageList[i].numChildren < 4) {
                         if (ViewMode == ViewModeEnum.PORTRAIT) {
 
-                            if (_docLoader.IsSplit)
+                            if (_docLoader.PagesSplit)
                                 uloaderidx = finduloaderIdx(_pageList[i].dupIndex);
 
-                            if (!_docLoader.IsSplit || uloaderidx == -1)
+                            if (!_docLoader.PagesSplit || uloaderidx == -1)
                                 uloaderidx = (i == _pageList.length - 1 && loaderidx + 3 < _docLoader.LoaderList.length) ? loaderidx + 3 : (loaderidx < _docLoader.LoaderList.length) ? loaderidx : 0;
 
-                            if (!_docLoader.IsSplit) {
+                            if (!_docLoader.PagesSplit) {
                                 if (!_bbusyloading && _docLoader.LoaderList != null && _docLoader.LoaderList.length > 0) {
                                     if (numPagesLoaded >= _pageList[i].dupIndex && _docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].content == null || (_docLoader.LoaderList[uloaderidx].content != null && _docLoader.LoaderList[uloaderidx].content.framesLoaded < _pageList[i].dupIndex)) {
                                         _bbusyloading = true;
@@ -1048,7 +955,7 @@ public class Viewer extends Canvas {
                                     }
                                 }
 
-                                if ((i < 2 || _pageList[i].numChildren == 0 || _pageList[i].loadedIndex != _pageList[i].dupIndex || (_pageList[i] != null && _docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].content != null && _docLoader.LoaderList[uloaderidx].content.currentFrame != _pageList[i].dupIndex)) && _docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].content != null) {
+                                if ((i < 2 || _pageList[i].numChildren == 0 || (_pageList[i] != null && _docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].content != null && _docLoader.LoaderList[uloaderidx].content.currentFrame != _pageList[i].dupIndex)) && _docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].content != null) {
                                     if (numPagesLoaded >= _pageList[i].dupIndex) {
                                         _docLoader.LoaderList[uloaderidx].content.gotoAndStop(_pageList[i].dupIndex);
                                         _pageList[i].addChild(_docLoader.LoaderList[uloaderidx]);
@@ -1065,26 +972,20 @@ public class Viewer extends Canvas {
                                 }
                             }
 
-                            if (_docLoader.IsSplit) {
+                            if (_docLoader.PagesSplit) {
                                 if (!_bbusyloading && _docLoader.LoaderList != null && _docLoader.LoaderList.length > 0) {
                                     if (_docLoader.LoaderList[uloaderidx] != null && _docLoader.LoaderList[uloaderidx].pageStartIndex != _pageList[i].dupIndex && !_loadTimer.running && !_docLoader.LoaderList[uloaderidx].loading) {
                                         dispatchEvent(new PageLoadingEvent(PageLoadingEvent.PAGE_LOADING, _pageList[i].dupIndex));
-                                        _pageList[i].resetPage(_libMC.width, _libMC.height, _scale, true);
-                                        _docLoader.LoaderList[uloaderidx].unloadAndStop(true);
-                                        _docLoader.LoaderList[uloaderidx].loaded = false;
-                                        _docLoader.LoaderList[uloaderidx].loading = true;
+                                        try {
+                                            _pageList[i].resetPage(_libMC.width, _libMC.height, _scale, true);
+                                            _docLoader.LoaderList[uloaderidx].unloadAndStop(true);
+                                            _docLoader.LoaderList[uloaderidx].loaded = false;
+                                            _docLoader.LoaderList[uloaderidx].loading = true;
+                                            _docLoader.LoaderList[uloaderidx].load(new URLRequest(getSwfFilePerPage(_swfFile, _pageList[i].dupIndex)), StreamUtil.getExecutionContext());
+                                            _docLoader.LoaderList[uloaderidx].pageStartIndex = _pageList[i].dupIndex;
+                                        } catch(err:IOErrorEvent) {
+                                        }
 
-                                        Security.loadEncryptedFile(new URLRequest(getSwfFilePerPage(_swfFile, _pageList[i].dupIndex)), _secretKey, function(e:Event):void {
-
-                                            try {
-                                                _docLoader.LoaderList[uloaderidx].loadBytes(_secretKey ? e.target.decryptedData : e.target.data, StreamUtil.getExecutionContext());
-                                            } catch(err:IOErrorEvent) {
-                                            }
-
-                                        }, onLoadProgress);
-
-
-                                        _docLoader.LoaderList[uloaderidx].pageStartIndex = _pageList[i].dupIndex;
                                         repaint();
 
                                     }
@@ -1098,7 +999,7 @@ public class Viewer extends Canvas {
                                         _pageList[i].addChild(_docLoader.LoaderList[uloaderidx]);
                                         _pageList[i].loadedIndex = _pageList[i].dupIndex;
 
-                                        if ((_performSearchOnPageLoad && _pendingSearchPage == _pageList[i].dupIndex) || (SearchMatchAll && prevSearchText.length > 0)) {
+                                        if (_performSearchOnPageLoad && _pendingSearchPage == _pageList[i].dupIndex) {
                                             _performSearchOnPageLoad = false;
                                             searchTextByService(prevSearchText)
                                         }
@@ -1106,8 +1007,8 @@ public class Viewer extends Canvas {
                                 }
                             }
 
-                        } else if (ViewMode == ViewModeEnum.TILE && _pageList[i].source == null && (numPagesLoaded >= _pageList[i].dupIndex || _docLoader.IsSplit)) {
-                            if (!_docLoader.IsSplit) {
+                        } else if (ViewMode == ViewModeEnum.TILE && _pageList[i].source == null && (numPagesLoaded >= _pageList[i].dupIndex || _docLoader.PagesSplit)) {
+                            if (!_docLoader.PagesSplit) {
                                 _libMC.gotoAndStop(_pageList[i].dupIndex);
                                 _thumbData = new BitmapData(_libMC.width * _scale, _libMC.height * _scale, false, 0xFFFFFF);
                                 _thumb = new Bitmap(_thumbData);
@@ -1117,20 +1018,17 @@ public class Viewer extends Canvas {
 
                                 if (!_bbusyloading && !_loadTimer.running && _docLoader.LoaderList != null && _docLoader.LoaderList.length > 0 && !_docLoader.LoaderList[uloaderidx].loading) {
                                     dispatchEvent(new PageLoadingEvent(PageLoadingEvent.PAGE_LOADING, _pageList[i].dupIndex));
-                                    _docLoader.LoaderList[uloaderidx].loaded = false;
-                                    _docLoader.LoaderList[uloaderidx].loading = true;
-                                    _pageList[i].resetPage(_libMC.width, _libMC.height, _scale, true);
 
-                                    Security.loadEncryptedFile(new URLRequest(getSwfFilePerPage(_swfFile, _pageList[i].dupIndex)), _secretKey, function(e:Event):void {
-                                        try {
-                                            _docLoader.LoaderList[uloaderidx].loadBytes(_secretKey ? e.target.decryptedData : e.target.data, StreamUtil.getExecutionContext());
-                                        } catch(err:IOErrorEvent) {
-                                        }
-                                    }, onLoadProgress);
+                                    try {
+                                        _pageList[i].resetPage(_libMC.width, _libMC.height, _scale, true);
+                                        _docLoader.LoaderList[uloaderidx].loaded = false;
+                                        _docLoader.LoaderList[uloaderidx].loading = true;
+                                        _docLoader.LoaderList[uloaderidx].load(new URLRequest(getSwfFilePerPage(_swfFile, _pageList[i].dupIndex)), StreamUtil.getExecutionContext());
+                                        _docLoader.LoaderList[uloaderidx].pageStartIndex = _pageList[i].dupIndex;
+                                    } catch(err:IOErrorEvent) {
+                                    }
 
-                                    _docLoader.LoaderList[uloaderidx].pageStartIndex = _pageList[i].dupIndex;
                                     repaint();
-
                                 }
 
                                 if (_docLoader.LoaderList[uloaderidx].pageStartIndex == _pageList[i].dupIndex && _pageList[i].loadedIndex != _pageList[i].dupIndex && _docLoader.LoaderList[uloaderidx].content != null) {
@@ -1222,9 +1120,9 @@ public class Viewer extends Canvas {
             if (_docLoader.LoaderList[i].pageStartIndex == idx)
                 return i;
         }
-        for (var i:int = 0; i < _docLoader.LoaderList.length; i++) {
-            if (!checkIsVisible(_docLoader.LoaderList[i].pageStartIndex))
-                return i;
+        for (var j:int = 0; j < _docLoader.LoaderList.length; i++) {
+            if (!checkIsVisible(_docLoader.LoaderList[j].pageStartIndex))
+                return j;
         }
         return -1;
     }
@@ -1266,7 +1164,7 @@ public class Viewer extends Canvas {
 //            _skinImgDo.removeEventListener(MouseEvent.MOUSE_OUT, skinMouseOut);
 //            _skinImgDo.removeEventListener(MouseEvent.MOUSE_DOWN, skinMouseDown);
 //        }
-
+//
 //        _skinImgDo = new Image();
 //        _skinImgDo.source = _skinImg;
 //        _skinImgDo.x = this.width - _skinImg.width - 27;
@@ -1301,8 +1199,8 @@ public class Viewer extends Canvas {
         _paperContainer.setStyle("horizontalGap", 1);
         _paperContainer.setStyle("verticalGap", 0);
 
-        //addChildAt(_paperContainer, getChildIndex(_skinImgDo) - 1);
-        addChild(_paperContainer);
+//        addChildAt(_paperContainer, getChildIndex(_skinImgDo) - 1);
+
         try {
             new flash.net.LocalConnection().connect('devaldiGCdummy');
             new flash.net.LocalConnection().connect('devaldiGCdummy');
@@ -1465,7 +1363,7 @@ public class Viewer extends Canvas {
     }
 
     private function skinMouseDown(evt:MouseEvent):void {
-        //dispatchEvent(new Event("onLogoClicked"));
+        dispatchEvent(new Event("onLogoClicked"));
     }
 
     override protected function commitProperties():void {
@@ -1499,27 +1397,21 @@ public class Viewer extends Canvas {
         dispatchEvent(event);
     }
 
-
     private function swfComplete(event:SwfLoadedEvent):void {
         if (!ProgressiveLoading) {
-
             try {
-                if (event.swfObject.content != null && (event.swfObject.content is MovieClip || event.swfObject.content is Bitmap)) {
+                if (event.swfObject.content != null && (event.swfObject.content is MovieClip || event.swfObject.content is Bitmap))
                     _libMC = new SwfDocument(event.swfObject.content as DisplayObject);
-                }
                 DupImage.paperSource = _libMC.getDocument();
             } catch(e:Error) {
-
                 if (!_docLoader.Resigned) {
                     _docLoader.signFileHeader(_docLoader.InputBytes);
                     return;
                 }
             }
 
-            if (!_secretKey && (_libMC == null || (event.swfObject != null && event.swfObject.content != null && event.swfObject.content is AVM1Movie)) && !_docLoader.Resigned) {
-
+            if ((_libMC == null || (event.swfObject != null && event.swfObject.content != null && event.swfObject.content is AVM1Movie)) && !_docLoader.Resigned) {
                 _docLoader.signFileHeader(_docLoader.InputBytes);
-
                 return;
             }
 
@@ -1529,7 +1421,7 @@ public class Viewer extends Canvas {
                 createLoaderList();
             }
 
-            if (!_docLoader.IsSplit)
+            if (!_docLoader.PagesSplit)
                 numPages = _libMC.totalFrames;
 
             _swfLoaded = true
@@ -1550,7 +1442,7 @@ public class Viewer extends Canvas {
 
                     if (_loaderptr == null) {
                         _docLoader.postProcessBytes(_inputBytes);
-                        _loaderptr = new Loader();
+                        _loaderptr = new DupLoader();
                         _loaderptr.contentLoaderInfo.addEventListener(Event.COMPLETE, swfComplete, false, 0, true);
                     }
 
@@ -1569,7 +1461,7 @@ public class Viewer extends Canvas {
                     }
                     DupImage.paperSource = _libMC.getDocument();
 
-                    if (!_docLoader.IsSplit)
+                    if (!_docLoader.PagesSplit)
                         numPages = _libMC.totalFrames;
 
                     firstLoad = _pageList == null || (_pageList.length == 0 && numPages > 0);
@@ -1812,7 +1704,7 @@ public class Viewer extends Canvas {
         addPages();
 
         // kick off the first page to load
-        if (!_docLoader.IsSplit) {
+        if (!_docLoader.PagesSplit) {
             if (_docLoader.LoaderList.length > 0) {
                 _bbusyloading = true;
                 _docLoader.LoaderList[0].unloadAndStop(true);
@@ -1832,7 +1724,7 @@ public class Viewer extends Canvas {
     }
 
     private function createLoaderList():void {
-        _docLoader.LoaderList = new Array(Math.round(getCalculatedHeight(_paperContainer) / (_libMC.height * _minZoomSize)) + (_docLoader.IsSplit) ? 5 : 1);
+        _docLoader.LoaderList = new Array(Math.round(getCalculatedHeight(_paperContainer) / (_libMC.height * _minZoomSize)) + (_docLoader.PagesSplit) ? 5 : 1);
 
         if (UsingExtViewMode && CurrExtViewMode.loaderListLength > _docLoader.LoaderList.length)
             _docLoader.LoaderList = new Array(CurrExtViewMode.loaderListLength);
@@ -1848,7 +1740,7 @@ public class Viewer extends Canvas {
     }
 
     private function docLoaderIOErrorListener(e:IOErrorEvent):void {
-        if (_docLoader != null && _docLoader.IsSplit) {
+        if (_docLoader != null && _docLoader.PagesSplit) {
             dispatchEvent(new ErrorLoadingPageEvent(ErrorLoadingPageEvent.ERROR_LOADING_PAGE, e.target.pageStartIndex));
         }
     }
@@ -1914,7 +1806,7 @@ public class Viewer extends Canvas {
 
         if (_searchExtracts[searchPageIndex - 1] == null && searchPageIndex != currPage) {
             var serve:HTTPService = new HTTPService();
-            var url = SearchServiceUrl;
+            var url:String = SearchServiceUrl;
             url = TextMapUtil.StringReplaceAll(url, "[page]", searchPageIndex.toString())
             url = TextMapUtil.StringReplaceAll(url, "[searchterm]", text)
             url = encodeURI(url);
@@ -2001,7 +1893,7 @@ public class Viewer extends Canvas {
         }
         text = text.toLowerCase();
 
-        if (_docLoader.IsSplit && SearchServiceUrl != null && SearchServiceUrl.length > 0)
+        if (_docLoader.PagesSplit && SearchServiceUrl != null && SearchServiceUrl.length > 0)
             return searchTextByService(text);
 
         var tri:Array;
@@ -2066,6 +1958,7 @@ public class Viewer extends Canvas {
                 }
             }
         }
+
 
         if (_selectionMarker != null && _selectionMarker.parent != null) {
             _selectionMarker.parent.removeChild(_selectionMarker);
@@ -2235,9 +2128,6 @@ public class Viewer extends Canvas {
         di.width = w;
         di.height = h;
         di.init();
-        di.NeedsFitting = DocLoader.IsSplit;
-        di.RoleModelHeight = _libMC.height;
-        di.RoleModelWidth = _libMC.width;
         //di.mouseChildren = false;
         di.addEventListener(MouseEvent.MOUSE_OVER, dupImageMoverHandler, false, 0, true);
         di.addEventListener(MouseEvent.MOUSE_OUT, dupImageMoutHandler, false, 0, true);
@@ -2249,7 +2139,8 @@ public class Viewer extends Canvas {
                 _pluginList[pl].bindPaperEventHandler(di);
 
         _pageList[index - 1] = di;
-        _pageList[index - 1].resetPage(w, h, _scale);
+
+        _pageList[index - 1].resetPage(_libMC.width, _libMC.height, _scale);
     }
 
     private function textSelectorMouseDownHandler(event:MouseEvent):void {
@@ -2355,7 +2246,7 @@ public class Viewer extends Canvas {
             _firstHitIndex = hitIndex;
         }
 
-        if (_docLoader.IsSplit)
+        if (_docLoader.PagesSplit)
             _currentSelectionPage = (_selectionMc.parent as DupLoader).pageStartIndex;
         else
             _currentSelectionPage = _selectionMc.currentFrame;
@@ -2373,7 +2264,7 @@ public class Viewer extends Canvas {
             _selectionMarker.parent.removeChild(_selectionMarker);
         }
 
-        if (_docLoader.IsSplit)
+        if (_docLoader.PagesSplit)
             searchPageIndex = (_selectionMc.parent as DupLoader).pageStartIndex;
         else
             searchPageIndex = _selectionMc.currentFrame;
@@ -2573,7 +2464,7 @@ public class Viewer extends Canvas {
         if (_viewMode == ViewModeEnum.TILE && event.target != null && event.target is DupImage) {
             addGlowFilter(event.target as DupImage);
         } else {
-            if (event.target is flash.display.SimpleButton || event.target is mx.core.SpriteAsset || (event.target is IFlexPaperPluginControl) || (event.target.parent != null && event.target.parent.parent != null && event.target.parent.parent is IFlexPaperPluginControl)) {
+            if (event.target is flash.display.SimpleButton || event.target is SpriteAsset || (event.target is IFlexPaperPluginControl) || (event.target.parent != null && event.target.parent.parent != null && event.target.parent.parent is IFlexPaperPluginControl)) {
                 CursorManager.removeAllCursors();
             } else {
                 if (TextSelectEnabled && CursorsEnabled) {
@@ -2646,15 +2537,11 @@ public class Viewer extends Canvas {
             if (!_splitpjloading) {
                 if (_splitpageNumList == null || (_splitpageNumList != null && _splitpageNumList[_splitpjprinted + 1] != null)) {
                     _splitpjloading = true;
-                    Security.loadEncryptedFile(new URLRequest(getSwfFilePerPage(_swfFile, _splitpjprinted + 1)), _secretKey, function(e:Event):void {
-                        _loaderptr.loadBytes(_secretKey ? e.target.decryptedData : e.target.data, StreamUtil.getExecutionContext());
-                    }, function(e:ProgressEvent):void {
-                    });
+                    _loaderptr.load(new URLRequest(getSwfFilePerPage(_swfFile, _splitpjprinted + 1)), StreamUtil.getExecutionContext());
                     return;
                 } else
                     _splitpjprinted++;
-            }
-            else {
+            } else {
                 setTimeout(printSplitPaper, 200);
                 return;
             }
@@ -2683,7 +2570,7 @@ public class Viewer extends Canvas {
     }
 
     public function printPaper():void {
-        if (_docLoader.IsSplit)
+        if (_docLoader.PagesSplit)
             return printSplitPaper(true);
 
         if (_libMC.parent is DupImage) {
@@ -2692,108 +2579,39 @@ public class Viewer extends Canvas {
         _libMC.alpha = 1;
 
         var pj:PrintJob = new PrintJob();
-        var pjlist:Array = new Array();
+        if (pj.start()) {
+            _libMC.stop();
 
-        if (!(_pluginList != null && _pluginList.length > 0)) {
-            if (pj.start()) {
-                _libMC.stop();
+            if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
+                _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
+            else if ((pj.pageWidth / _libMC.width) < 1)
+                _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
 
-                //if(pj.orientation == "landscape"){
+            var options:PrintJobOptions = new PrintJobOptions();
+            //options.printAsBitmap = true;
 
-                //}
-
-                if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
-                else if ((pj.pageWidth / _libMC.width) < 1)
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
-
-                var options:PrintJobOptions = new PrintJobOptions();
-                //options.printAsBitmap = true;
-
-                var i:int = 0;
-                _libMC.gotoAndStop(i + 1);
-
-                while (_libMC.totalFrames > _libMC.currentFrame) {
-                    if (_libMC.currentFrame == i + 1) {
-                        pj.addPage(_swfContainer, null, options);
-
-                        i++;
-                    }
-
-                    _libMC.gotoAndStop(_libMC.currentFrame + 1);
-                }
-
-                pj.addPage(_swfContainer, null, options);
-                pj.send();
-            }
-        }
-
-        // printing with plug-ins uses a bitmap approach
-        if (_pluginList != null && _pluginList.length > 0) {
-            var di:DupImage;
             var i:int = 0;
             _libMC.gotoAndStop(i + 1);
-
-            if (pj.start()) {
-                _libMC.stop();
-
-                if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
-                else if ((pj.pageWidth / _libMC.width) < 1)
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
-
-                var options:PrintJobOptions = new PrintJobOptions();
-
-                while (_libMC.totalFrames > _libMC.currentFrame) {
-                    if (_libMC.currentFrame == i + 1) {
-                        di = preparePrintBitmap(i);
-                        pjlist[i] = preparePrintBitmap(i);
-                        i++;
-                    }
-
-                    _libMC.gotoAndStop(_libMC.currentFrame + 1);
+            while (_libMC.totalFrames > _libMC.currentFrame) {
+                if (_libMC.currentFrame == i + 1) {
+                    pj.addPage(_swfContainer, null, options);
+                    i++;
                 }
 
-                di = preparePrintBitmap(_libMC.totalFrames);
-                pjlist[_libMC.totalFrames - 1] = preparePrintBitmap(_libMC.totalFrames - 1);
-
-                for (var ipjlist:int = 0; ipjlist < pjlist.length; ipjlist++) {
-                    pj.addPage(pjlist[ipjlist], null, options);
-                }
-
-                pj.send();
+                _libMC.gotoAndStop(_libMC.currentFrame + 1);
             }
+            pj.addPage(_swfContainer, null, options);
+            pj.send();
         }
 
         _libMC.scaleX = _libMC.scaleY = 1;
         _libMC.alpha = 0;
+
         dispatchEvent(new DocumentPrintedEvent(DocumentPrintedEvent.DOCUMENT_PRINTED));
     }
 
-    private function preparePrintBitmap(pageIndex:int):DupImage {
-        var di:DupImage = new DupImage();
-        di.removeAllChildren();
-
-        var bmd:BitmapData = new BitmapData(_libMC.width, _libMC.height);
-        var bm:Bitmap = new Bitmap(bmd);
-
-        bmd = new BitmapData(_libMC.width, _libMC.height);
-        bm = new Bitmap(bmd);
-        bmd.draw(_libMC.getDocument(), new Matrix(1, 0, 0, 1), null, null, null, true);
-
-        if (_pluginList != null) {
-            for (var pl = 0; pl < _pluginList.length; pl++) {
-                _pluginList[pl].drawSelf(pageIndex, bmd, 1);
-            }
-        }
-
-        di.addChild(bm);
-
-        return di;
-    }
-
     public function printPaperRange(range:String):void {
-        if (_docLoader.IsSplit)
+        if (_docLoader.PagesSplit)
             return printSplitPaper(true, range);
 
         if (_libMC.parent is DupImage) {
@@ -2802,7 +2620,6 @@ public class Viewer extends Canvas {
         _libMC.alpha = 1;
 
         var pageNumList:Array = new Array();
-        var pjlist:Array = new Array();
 
         if (range == "Current") {
             pageNumList[currPage] = true;
@@ -2825,77 +2642,34 @@ public class Viewer extends Canvas {
         var options:PrintJobOptions = new PrintJobOptions();
         //options.printAsBitmap = true;
 
-        if (!(_pluginList != null && _pluginList.length > 0)) {
-            if (pj.start()) {
-                _libMC.stop();
+        if (pj.start()) {
+            _libMC.stop();
 
-                if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
-                else if ((pj.pageWidth / _libMC.width) < 1)
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
+            if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
+                _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
+            else if ((pj.pageWidth / _libMC.width) < 1)
+                _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
 
-                var i:int = 0;
-                _libMC.gotoAndStop(i + 1);
-                while (_libMC.totalFrames > _libMC.currentFrame) {
-                    if (_libMC.currentFrame == i + 1) {
-                        if (pageNumList[i + 1] != null) {
-                            pj.addPage(_swfContainer, null, options);
-                        }
 
-                        i++;
-                    }
+            var j:int = 0;
+            _libMC.gotoAndStop(j + 1);
+            while (_libMC.totalFrames > _libMC.currentFrame) {
+                if (_libMC.currentFrame == j + 1) {
+                    if (pageNumList[j + 1] != null)
+                        pj.addPage(_swfContainer, null, options);
 
-                    _libMC.gotoAndStop(_libMC.currentFrame + 1);
+                    j++;
                 }
 
-                if (pageNumList[_libMC.totalFrames] != null) {
-                    pj.addPage(_swfContainer, null, options);
-                }
-
-                pj.send();
+                _libMC.gotoAndStop(_libMC.currentFrame + 1);
             }
+
+            if (pageNumList[_libMC.totalFrames] != null)
+                pj.addPage(_swfContainer, null, options);
+
+            pj.send();
+
         }
-
-        // printing with plug-ins uses a bitmap approach
-        if (_pluginList != null && _pluginList.length > 0) {
-            var di:DupImage;
-            var i:int = 0;
-            if (pj.start()) {
-                _libMC.stop();
-
-                if ((pj.pageHeight / _libMC.height) < 1 && (pj.pageHeight / _libMC.height) < (pj.pageWidth / _libMC.width))
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageHeight / _libMC.height);
-                else if ((pj.pageWidth / _libMC.width) < 1)
-                    _libMC.scaleX = _libMC.scaleY = (pj.pageWidth / _libMC.width);
-
-                var i:int = 0;
-                _libMC.gotoAndStop(i + 1);
-                while (_libMC.totalFrames > _libMC.currentFrame) {
-                    if (_libMC.currentFrame == i + 1) {
-                        if (pageNumList[i + 1] != null) {
-                            di = preparePrintBitmap(i);
-                            pjlist[i] = preparePrintBitmap(i);
-                        }
-
-                        i++;
-                    }
-
-                    _libMC.gotoAndStop(_libMC.currentFrame + 1);
-                }
-
-                if (pageNumList[_libMC.totalFrames] != null) {
-                    di = preparePrintBitmap(_libMC.totalFrames);
-                    pjlist[_libMC.totalFrames - 1] = preparePrintBitmap(_libMC.totalFrames - 1);
-                }
-
-                for (var ipjlist:int = 0; ipjlist < pjlist.length; ipjlist++) {
-                    pj.addPage(pjlist[ipjlist], null, options);
-                }
-
-                pj.send();
-            }
-        }
-
 
         _libMC.scaleX = _libMC.scaleY = 1;
         _libMC.alpha = 0;
@@ -2922,11 +2696,11 @@ public class Viewer extends Canvas {
     }
 
     public function get SecretKey():String {
-        return _secretKey;
+        return EncryptedLoader.SecretKey;
     }
 
     public function set SecretKey(value:String):void {
-        _secretKey = value;
+        EncryptedLoader.SecretKey = value;
     }
 }
 }

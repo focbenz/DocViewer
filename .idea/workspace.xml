@@ -15,8 +15,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="652659cf-4b74-429d-8e5e-61851e29736d" name="Default" comment="..">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/compiler-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/bg_BG/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/cz_CS/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/de_DE/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/dn_DN/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/el_EL/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/en_US/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/es_ES/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/fi_FN/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/fr_FR/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/he_IL/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/hu_HU/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/it_IT/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/nl_NL/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pl_PL/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pt_BR/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pt_PT/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/pv_FN/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/ru_RU/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/se_SE/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/tr_TR/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/zh_CN/DocViewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/locale/zh_CN/FlexPaper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/module_docviewerflex.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/AuxFunctions.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/Equations.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/PropertyInfoObj.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialProperty.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialPropertyModifier.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/SpecialPropertySplitter.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/TweenListObj.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/Tweener.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/ColorShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/CurveModifiers.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/DisplayShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/FilterShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/SoundShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/caurina/transitions/properties/TextShortcuts.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowBox.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowLayout.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowTwoPage.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowVBox.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/MatrixTransformer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/ZoomCanvas.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FitModeEnum.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperPlugin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperPluginControl.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/IFlexPaperViewModePlugin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/PrintRangeDialog.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/ShapeMarker.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/ViewModeEnum.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/styles/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/FullscreenHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/StreamUtil.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/TextMapUtil.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/CurrentPageChangedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/CursorModeChangedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/DocumentLoadedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/DocumentPrintedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ErrorLoadingPageEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ExternalLinkClickedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/FitModeChangedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/PageLoadedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/PageLoadingEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ScaleChangedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/SelectionCreatedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/SwfLoadedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/events/ViewModeChangedEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientBackground.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientHSlider.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientImageButton.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientLabel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/skinning/GradientTextInput.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupLoader.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IDocumentLoader.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IGenericDocument.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IGenericMovieClip.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/SwfDocument.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/utils/StringUtils.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewerflex/src/com/log4ic/utils/security/XXTEA.as" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docviewerflex.backup/docviewerflex.iml" afterPath="$PROJECT_DIR$/docviewerflex/docviewerflex.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/web/resources/flex/docviewer.swf" afterPath="$PROJECT_DIR$/docviewer/web/resources/flex/docviewer.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" afterPath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" afterPath="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/Viewer.as" afterPath="$PROJECT_DIR$/docviewerflex.backup/src/com/devaldi/controls/flexpaper/Viewer.as" />
     </list>
     <ignored path="docviwer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +134,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" line="421" class="com.log4ic.DocViewer" package="com.log4ic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,21 +174,323 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DocViewer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java">
+      <file leaf-file-name="Viewer.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="64" selection-start="5186" selection-end="5186" vertical-scroll-proportion="0.43442622">
+            <state line="1302" column="9" selection-start="51055" selection-end="51055" vertical-scroll-proportion="-5.12">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuIcons.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="35" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="About.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="21" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.0833335">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1319771992000" expanded="true" signature="232:238" placeholder="{...}" />
+                <marker date="1319771992000" expanded="true" signature="333:428" placeholder="..." />
+                <marker date="1319771992000" expanded="true" signature="461:538" placeholder="{...}" />
+                <marker date="1319771992000" expanded="true" signature="589:636" placeholder="{...}" />
+                <marker date="1319771992000" expanded="true" signature="717:748" placeholder="{...}" />
+                <marker date="1319771992000" expanded="true" signature="1231:1309" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocViewerServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java">
+      <file leaf-file-name="library.swf" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../flexpaper/FlexPaper/lib/FlexPaper_Resources.swc!/library.swf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="68" selection-start="1094" selection-end="1114" vertical-scroll-proportion="0.0">
+            <state line="137" column="19" selection-start="5668" selection-end="7574" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoPagePlugin.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="13" selection-start="3108" selection-end="3108" vertical-scroll-proportion="0.27124774">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MacMouseWheelHandler.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="53" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexPaperViewer.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="40" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-5.3333335">
+              <folding>
+                <marker date="1319771981000" expanded="true" signature="120:142" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="1142:1404" placeholder="..." />
+                <marker date="1319771981000" expanded="true" signature="1541:1566" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="1620:1779" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="1848:1902" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="1973:2139" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="2214:2447" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="2523:2757" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="2823:2853" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="2927:3017" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3094:3142" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3211:3366" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3266:3326" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3432:3619" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3686:3821" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="3889:4047" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="4141:4281" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="4338:4465" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="4523:4666" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="4752:4848" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="4909:5078" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="5427:5444" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="5768:5798" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="6094:6123" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="6414:6440" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="6820:6867" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="7181:7228" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="7684:7706" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="7716:7735" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="7784:7793" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="8224:8244" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="8696:8715" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="9096:9112" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="9300:9324" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="10002:10018" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="10421:10452" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="10769:10801" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="11194:11217" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="11554:11588" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12145:12161" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12630:12658" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12686:12713" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12744:12777" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12800:12830" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12868:12903" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12930:12969" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="12993:13014" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13040:13063" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13090:13114" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13141:13165" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13194:13220" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13251:13286" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13314:13343" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13365:13394" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13417:13447" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="13475:13510" placeholder="{...}" />
+                <marker date="1319771981000" expanded="true" signature="14013:14045" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexPaperViewer_Base.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.333333">
+              <folding>
+                <marker date="1319771967000" expanded="true" signature="289:311" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="340:346" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="372:381" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="427:1318" placeholder="..." />
+                <marker date="1319771967000" expanded="true" signature="3299:3335" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="3377:3614" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="3653:3724" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="3781:5144" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="4210:4457" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="4521:4815" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="4844:5134" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5192:5239" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5286:5333" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5375:5443" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5485:5553" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5602:5651" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5706:5752" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="5801:5957" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6014:6124" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6175:6594" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6204:6584" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6246:6504" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6510:6570" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6654:6869" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6941:7496" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="6997:7077" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7135:7212" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7263:7341" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7347:7406" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7563:7714" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7767:8009" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7796:7999" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7818:7953" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="7966:7985" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8062:10097" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8080:10044" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8126:8858" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8305:8434" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8489:8840" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="8864:10030" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10071:10087" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10139:10181" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10224:10267" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10317:10360" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10434:10479" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10557:10602" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10682:10727" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10810:10855" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="10939:10984" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11079:11124" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11212:11257" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11325:11370" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11441:11486" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11571:11616" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11685:11730" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11800:11845" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="11937:11982" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12033:12077" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12132:12180" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12229:12278" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12338:12391" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12453:12501" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12564:12788" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12614:12678" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12713:12778" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="12847:12953" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="13002:13045" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="13105:13534" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="13600:13645" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="13698:13744" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="13800:14263" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="14311:14352" placeholder="{...}" />
+                <marker date="1319771967000" expanded="true" signature="14410:14452" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDocumentLoader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/IDocumentLoader.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="501" selection-end="503" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncryptedLoader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AVM2Loader.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="35" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradientTextInput.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientTextInput.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="5" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docviewer.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="34" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DupImage.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="34" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DupImage.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/streaming/DupImage.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocViewerFlex.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="49" selection-start="1939" selection-end="1939" vertical-scroll-proportion="-11.5">
+              <folding>
+                <marker date="1319768665000" expanded="true" signature="374:384" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="1849:3358" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="3416:3505" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="3568:3624" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="3634:3708" placeholder="/** ...*/" />
+                <marker date="1319768665000" expanded="true" signature="3791:3917" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="3831:3883" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="4001:4127" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="4041:4093" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="4214:4388" placeholder="{...}" />
+                <marker date="1319768665000" expanded="true" signature="4292:4354" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spinner.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="118" column="71" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleManager.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/styles/StyleManager.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="25" selection-start="1202" selection-end="1214" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IStyleManager2.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Program/flex_sdk_4.5.1.21328/frameworks/projects/framework/src/mx/styles/IStyleManager2.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,22 +510,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/docviewerapi/src/config/docviewer.properties" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/support/DocViewerServiceListener.java" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/service/DocAttachmentService.java" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/security/XXTEA.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/StringUtils.as" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/filter/SplitSwfFileFilter.java" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/DocViewerConverter.java" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/office/OfficeConverter.java" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/pdf/PDFConverter.java" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/FlowBox.as" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/streaming/EncryptedLoader.as" />
-        <option value="$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/security/Security.as" />
+        <option value="$PROJECT_DIR$/docviewerflex.backup/src/com/log4ic/utils/security/Security.as" />
         <option value="$PROJECT_DIR$/docviewerapi/src/conf/docviewer.properties" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/DocViewerFlex.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/Spinner.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/utils/MacMouseWheelHandler.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/streaming/EncryptedLoader.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/AVM2Loader.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/style/MenuIcons.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml" />
+        <option value="$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as" />
       </list>
     </option>
   </component>
@@ -201,6 +587,28 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerflex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,10 +662,6 @@
               <option name="myItemId" value="log4ic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -281,37 +685,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streaming" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,70 +734,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devaldi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flexpaper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devaldi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flexpaper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -475,223 +785,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewerapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -734,44 +828,6 @@
               <option name="myItemId" value="log4ic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviewer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4ic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Favorites" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docviwer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -779,7 +835,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="79" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -823,10 +879,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docviewerflex" />
+      <recent name="$PROJECT_DIR$/docviewerflex/locale/zh_CN" />
       <recent name="$PROJECT_DIR$/docviewer/src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.docviwer">
+    <configuration default="false" name="DocViewerFlex" type="FlexRunConfigurationType" factoryName="Flex" temporary="true" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="$PROJECT_DIR$/out/production/docviewerflex/_DocViewerFlex.swf" launcher_type="Player" main_class_name="DocViewerFlex" module_name="docviewerflex" player_path="$USER_HOME$/Program/flex_sdk_4.5.1.21328/runtimes/player/10.2/lnx/flashplayerdebugger" run_mode="MainClass" run_trusted="true" url_to_launch="http://">
+      <RunnerSettings RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <method>
         <option name="AntTarget" enabled="false" />
@@ -868,6 +931,15 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexRunConfigurationType" factoryName="Flex" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" module_name="" player_path="/usr/bin/flashplayerdebugger" run_mode="HtmlOrSwfFile" run_trusted="false" url_to_launch="http://">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1084,8 +1156,9 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.docviwer" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Flex.DocViewerFlex" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.docviwer" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1110,6 +1183,24 @@
     <option name="FORCE_UPDATE" value="false" />
     <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$USER_HOME$/Desktop/FlexPaper" />
+          <option name="myCopyRoot" value="$USER_HOME$/Desktop/FlexPaper" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$USER_HOME$/Desktop/FlexPaper" />
+          <option name="myCopyRoot" value="$USER_HOME$/Desktop/FlexPaper" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1146,23 +1237,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.58678955" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45007682" sideWeight="0.99240124" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49308756" sideWeight="0.99240124" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3563748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3558776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902735" sideWeight="0.67127496" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5499232" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32522798" sideWeight="0.6605223" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1262,98 +1353,360 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/security/Security.as">
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientHSlider.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.026223777" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/security/XXTEA.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="38" selection-end="38" vertical-scroll-proportion="0.025641026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/sinitek/log4ic/utils/StringUtils.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="38" selection-end="38" vertical-scroll-proportion="0.025641026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.026223777" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="81" selection-end="81" vertical-scroll-proportion="0.024834437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/PDFConvertWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.024834437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/DocViewerConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.02538071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/pdf/PDFConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="7821" selection-end="7821" vertical-scroll-proportion="0.02538071" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/java/jdk1.6.0_26/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="661" column="0" selection-start="24792" selection-end="24792" vertical-scroll-proportion="0.024834437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="58" selection-start="450" selection-end="450" vertical-scroll-proportion="0.024077047" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/office/connector/BootstrapConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="27" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.024590164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/office/connector/BootstrapPipeConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.024590164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/office/connector/BootstrapSocketConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="69" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.024590164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="68" selection-start="1094" selection-end="1114" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3180212">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java">
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientBackground.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="64" selection-start="5186" selection-end="5186" vertical-scroll-proportion="0.43442622">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.97649187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.657845">
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/skinning/GradientTextInput.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="5" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/streaming/DupImage.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/streaming/DupImage.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="34" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/resources/grab.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../flexpaper/FlexPaper/lib/FlexPaper_Resources.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="19" selection-start="5668" selection-end="7574" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/Viewer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1302" column="9" selection-start="51055" selection-end="51055" vertical-scroll-proportion="-5.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="-10.333333">
+          <folding>
+            <marker date="1319771967000" expanded="true" signature="289:311" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="340:346" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="372:381" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="427:1318" placeholder="..." />
+            <marker date="1319771967000" expanded="true" signature="3299:3335" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="3377:3614" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="3653:3724" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="3781:5144" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="4210:4457" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="4521:4815" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="4844:5134" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5192:5239" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5286:5333" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5375:5443" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5485:5553" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5602:5651" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5706:5752" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="5801:5957" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6014:6124" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6175:6594" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6204:6584" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6246:6504" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6510:6570" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6654:6869" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6941:7496" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="6997:7077" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7135:7212" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7263:7341" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7347:7406" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7563:7714" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7767:8009" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7796:7999" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7818:7953" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="7966:7985" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8062:10097" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8080:10044" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8126:8858" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8305:8434" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8489:8840" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="8864:10030" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10071:10087" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10139:10181" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10224:10267" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10317:10360" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10434:10479" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10557:10602" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10682:10727" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10810:10855" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="10939:10984" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11079:11124" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11212:11257" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11325:11370" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11441:11486" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11571:11616" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11685:11730" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11800:11845" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="11937:11982" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12033:12077" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12132:12180" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12229:12278" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12338:12391" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12453:12501" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12564:12788" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12614:12678" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12713:12778" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="12847:12953" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="13002:13045" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="13105:13534" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="13600:13645" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="13698:13744" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="13800:14263" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="14311:14352" placeholder="{...}" />
+            <marker date="1319771967000" expanded="true" signature="14410:14452" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="40" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-5.3333335">
+          <folding>
+            <marker date="1319771981000" expanded="true" signature="120:142" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="1142:1404" placeholder="..." />
+            <marker date="1319771981000" expanded="true" signature="1541:1566" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="1620:1779" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="1848:1902" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="1973:2139" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="2214:2447" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="2523:2757" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="2823:2853" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="2927:3017" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3094:3142" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3211:3366" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3266:3326" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3432:3619" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3686:3821" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="3889:4047" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="4141:4281" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="4338:4465" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="4523:4666" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="4752:4848" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="4909:5078" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="5427:5444" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="5768:5798" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="6094:6123" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="6414:6440" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="6820:6867" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="7181:7228" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="7684:7706" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="7716:7735" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="7784:7793" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="8224:8244" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="8696:8715" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="9096:9112" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="9300:9324" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="10002:10018" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="10421:10452" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="10769:10801" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="11194:11217" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="11554:11588" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12145:12161" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12630:12658" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12686:12713" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12744:12777" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12800:12830" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12868:12903" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12930:12969" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="12993:13014" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13040:13063" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13090:13114" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13141:13165" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13194:13220" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13251:13286" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13314:13343" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13365:13394" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13417:13447" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="13475:13510" placeholder="{...}" />
+            <marker date="1319771981000" expanded="true" signature="14013:14045" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/flexpaper/About.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="407" selection-end="407" vertical-scroll-proportion="-4.0833335">
+          <folding>
+            <marker date="1319771992000" expanded="true" signature="232:238" placeholder="{...}" />
+            <marker date="1319771992000" expanded="true" signature="333:428" placeholder="..." />
+            <marker date="1319771992000" expanded="true" signature="461:538" placeholder="{...}" />
+            <marker date="1319771992000" expanded="true" signature="589:636" placeholder="{...}" />
+            <marker date="1319771992000" expanded="true" signature="717:748" placeholder="{...}" />
+            <marker date="1319771992000" expanded="true" signature="1231:1309" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/log4ic/resources/MenuIcons.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="35" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="334" column="19" selection-start="9831" selection-end="9831" vertical-scroll-proportion="0.3647059">
+          <folding>
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1288761850000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/FlexPaper/src/com/devaldi/controls/flexpaper/Viewer.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="45" selection-start="5548" selection-end="5548" vertical-scroll-proportion="0.4494382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerflex/src/com/devaldi/controls/TwoPagePlugin.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="13" selection-start="3108" selection-end="3108" vertical-scroll-proportion="0.27124774">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,7 +1769,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
