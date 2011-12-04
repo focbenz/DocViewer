@@ -4,6 +4,7 @@ import com.log4ic.DocViewer;
 import com.log4ic.utils.FileUtils;
 import com.log4ic.utils.convert.office.OfficeConverter;
 import com.log4ic.utils.convert.pdf.PDFConverter;
+import org.apache.commons.lang.StringUtils;
 
 import java.io.File;
 import java.util.LinkedList;
@@ -38,8 +39,9 @@ public class DocViewerConverter {
         return runningQueue;
     }
 
-    /***
+    /**
      * 转换为swf
+     *
      * @param file
      * @param outPath
      * @return 返回转换后输出文件目录
@@ -55,14 +57,12 @@ public class DocViewerConverter {
         try {
             runningQueue.add(file);
             String suffix = FileUtils.getFileSuffix(file);
-            File pdf;
-            if (suffix == null) {
+            if (StringUtils.isBlank(suffix)) {
                 throw new Exception("The file not has a suffix!");
             }
+            File pdf = file;
             if (!suffix.toLowerCase().equals("pdf")) {
                 pdf = toPDF(file, outPath);
-            } else {
-                pdf = file;
             }
 
             return pdfConverter.convert(pdf, outPath, DocViewer.isSplitPage(), false);
