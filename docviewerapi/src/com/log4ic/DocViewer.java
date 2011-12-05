@@ -583,7 +583,7 @@ public class DocViewer {
         DocViewer.initialize();
         OfficeConverter converter = new OfficeConverter();
         try {
-            converter.convert("/home/icode/Desktop/ATT00001.txt", "/home/icode/Desktop/ATT00001.pdf");
+            converter.convert("/home/icode/Desktop/b.txt", "/home/icode/Desktop/b.pdf");
         } catch (IOException e) {
             e.printStackTrace();
         }

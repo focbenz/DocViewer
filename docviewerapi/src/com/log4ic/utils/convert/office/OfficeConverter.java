@@ -113,12 +113,19 @@ public class OfficeConverter {
      */
     public File convert(File inputFile, File outputFile) throws IOException {
         try {
-            String systemEncoding = Charset.defaultCharset().name();
-            if (inputFile.getName().endsWith(".txt") && !FileUtils.getFileEncoding(inputFile).equals(systemEncoding)) {
-                String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.txt";
-                File encodedFile = new File(encodedFileName);
-                FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
-                inputFile = encodedFile;
+            if (inputFile.getName().endsWith(".txt")) {
+                Charset fileCharset = FileUtils.getFileEncoding(inputFile);
+                if (fileCharset != null) {
+                    Charset systemCharset = Charset.defaultCharset();
+                    if (!(systemCharset.equals(Charset.forName("GBK")) && fileCharset.name().toLowerCase().equals("gb2312"))) {
+                        if (!fileCharset.equals(systemCharset)) {
+                            String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.txt";
+                            File encodedFile = new File(encodedFileName);
+                            FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
+                            inputFile = encodedFile;
+                        }
+                    }
+                }
             }
             LOGGER.debug("进行文档转换转换:" + inputFile.getPath() + " --> " + outputFile.getPath());
             OfficeDocumentConverter converter = new OfficeDocumentConverter(officeManager);

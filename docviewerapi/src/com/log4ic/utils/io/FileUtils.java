@@ -140,7 +140,7 @@ public class FileUtils {
      * @param file 输入文件
      * @return 字符集名称，如果不支持的字符集则返回null
      */
-    public static String getFileEncoding(File file) {
+    public static Charset getFileEncoding(File file) {
         /*------------------------------------------------------------------------
           detector是探测器，它把探测任务交给具体的探测实现类的实例完成。
           cpDetector内置了一些常用的探测实现类，这些探测实现类的实例可以通过add方法
@@ -166,18 +166,14 @@ public class FileUtils {
         detector.add(ASCIIDetector.getInstance());
         // UnicodeDetector用于Unicode家族编码的测定
         detector.add(UnicodeDetector.getInstance());
-        java.nio.charset.Charset charset = null;
+        Charset charset = null;
         try {
             charset = detector.detectCodepage(file.toURI().toURL());
         } catch (Exception ex) {
             ex.printStackTrace();
         }
 
-        if (charset != null) {
-            return charset.name();
-        } else {
-            return null;
-        }
+        return charset;
     }
 
 
@@ -213,12 +209,12 @@ public class FileUtils {
             outRandom = new RandomAccessFile(outFile, "rw");
             FileChannel outChannel = outRandom.getChannel();
             outChannel.write(outBuffer);
-        }
-
-        inRandom.close();
-        if (outRandom != null) {
+            outChannel.close();
             outRandom.close();
         }
+
+        inChannel.close();
+        inRandom.close();
 
         return outBuffer.array();
     }
@@ -246,7 +242,7 @@ public class FileUtils {
      * @throws IOException
      */
     public static byte[] convertFileEncoding(File inFile, @Nullable File outFile, Charset outCharset) throws IOException {
-        return convertFileEncoding(inFile, Charset.forName(getFileEncoding(inFile)), outFile, outCharset);
+        return convertFileEncoding(inFile, getFileEncoding(inFile), outFile, outCharset);
     }
 
     /**
