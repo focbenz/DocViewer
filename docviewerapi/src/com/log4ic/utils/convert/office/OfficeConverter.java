@@ -14,6 +14,7 @@ import org.artofsolving.jodconverter.office.OfficeManager;
 import java.io.File;
 import java.io.IOException;
 import java.net.ConnectException;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
 /**
@@ -112,12 +113,12 @@ public class OfficeConverter {
      */
     public File convert(File inputFile, File outputFile) throws IOException {
         try {
-            if (System.getProperty("os.name").startsWith("Windows") && inputFile.getName().endsWith(".txt")) {
-                File tmp = new File(inputFile.getName().replace(".txt", ".odt"));
-                if (!tmp.exists()) {
-                    org.apache.commons.io.FileUtils.copyFile(inputFile, tmp);
-                }
-                inputFile = tmp;
+            String systemEncoding = Charset.defaultCharset().name();
+            if (inputFile.getName().endsWith(".txt") && !FileUtils.getFileEncoding(inputFile).equals(systemEncoding)) {
+                String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.txt";
+                File encodedFile = new File(encodedFileName);
+                FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
+                inputFile = encodedFile;
             }
             LOGGER.debug("进行文档转换转换:" + inputFile.getPath() + " --> " + outputFile.getPath());
             OfficeDocumentConverter converter = new OfficeDocumentConverter(officeManager);

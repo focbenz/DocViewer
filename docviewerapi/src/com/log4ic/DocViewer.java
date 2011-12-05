@@ -583,16 +583,7 @@ public class DocViewer {
         DocViewer.initialize();
         OfficeConverter converter = new OfficeConverter();
         try {
-
-            File file = new File("/home/icode/Desktop/b.txt");
-
-            File outFile = new File("/home/icode/Desktop/b_encoded.txt");
-
-            FileUtils.convertFileEncodingToSys(file, outFile);
-
-            System.out.println("converted!");
-
-            converter.convert(outFile.getPath(), "/home/icode/Desktop/b.pdf");
+            converter.convert("/home/icode/Desktop/ATT00001.txt", "/home/icode/Desktop/ATT00001.pdf");
         } catch (IOException e) {
             e.printStackTrace();
         }
