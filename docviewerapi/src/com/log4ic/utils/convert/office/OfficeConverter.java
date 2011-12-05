@@ -105,6 +105,10 @@ public class OfficeConverter {
         return convert(inputFile, outputFile);
     }
 
+    private boolean isWindows() {
+        return System.getProperty("os.name").startsWith("Windows");
+    }
+
     /**
      * 根据传入文件后缀名转换文件
      *
@@ -117,13 +121,17 @@ public class OfficeConverter {
                 Charset fileCharset = FileUtils.getFileEncoding(inputFile);
                 if (fileCharset != null) {
                     Charset systemCharset = Charset.defaultCharset();
-                    if (!(systemCharset.equals(Charset.forName("GBK")) && fileCharset.name().toLowerCase().equals("gb2312"))) {
-                        if (!fileCharset.equals(systemCharset)) {
-                            String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.txt";
-                            File encodedFile = new File(encodedFileName);
-                            FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
-                            inputFile = encodedFile;
-                        }
+                    if (!fileCharset.equals(systemCharset) && !(systemCharset.equals(Charset.forName("GBK"))
+                            && fileCharset.name().toLowerCase().equals("gb2312"))) {
+                        String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded." + (this.isWindows() ? "odt" : "txt");
+                        File encodedFile = new File(encodedFileName);
+                        FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
+                        inputFile = encodedFile;
+                    } else if (isWindows()) {
+                        String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.odt";
+                        File encodedFile = new File(encodedFileName);
+                        org.apache.commons.io.FileUtils.copyFile(inputFile, encodedFile);
+                        inputFile = encodedFile;
                     }
                 }
             }
