@@ -1,6 +1,6 @@
 package com.log4ic.utils.convert.office;
 
-import com.log4ic.utils.FileUtils;
+import com.log4ic.utils.io.FileUtils;
 import com.sun.star.comp.helper.BootstrapException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

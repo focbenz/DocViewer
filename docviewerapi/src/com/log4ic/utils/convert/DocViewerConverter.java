@@ -1,7 +1,7 @@
 package com.log4ic.utils.convert;
 
 import com.log4ic.DocViewer;
-import com.log4ic.utils.FileUtils;
+import com.log4ic.utils.io.FileUtils;
 import com.log4ic.utils.convert.office.OfficeConverter;
 import com.log4ic.utils.convert.pdf.PDFConverter;
 import org.apache.commons.lang.StringUtils;

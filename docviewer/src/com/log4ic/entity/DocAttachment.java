@@ -1,6 +1,6 @@
 package com.log4ic.entity;
 
-import com.log4ic.utils.FileUtils;
+import com.log4ic.utils.io.FileUtils;
 
 import java.io.File;
 import java.io.FileInputStream;

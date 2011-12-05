@@ -2,7 +2,7 @@ package com.log4ic.utils.convert.pdf;
 
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfReader;
-import com.log4ic.utils.FileUtils;
+import com.log4ic.utils.io.FileUtils;
 import com.log4ic.utils.security.PDFSecurer;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;

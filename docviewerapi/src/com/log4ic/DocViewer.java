@@ -2,11 +2,11 @@ package com.log4ic;
 
 import com.log4ic.entity.IDocAttachment;
 import com.log4ic.services.IAttachmentService;
-import com.log4ic.utils.FileUtils;
 import com.log4ic.utils.convert.*;
 import com.log4ic.utils.convert.office.OfficeConverter;
 import com.log4ic.utils.convert.pdf.PDFConverter;
-import com.log4ic.utils.filter.SplitSwfFileFilter;
+import com.log4ic.utils.io.FileUtils;
+import com.log4ic.utils.io.filter.SplitSwfFileFilter;
 import com.log4ic.utils.security.XXTEA;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
@@ -119,7 +119,7 @@ public class DocViewer {
 
     public static IAttachmentService getAttachmentService() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         if (attachmentService == null) {
-            synchronized (ATTACHMENT_SERVICE){
+            synchronized (ATTACHMENT_SERVICE) {
                 if (attachmentService == null) {
                     Class serviceClass = Class.forName(ATTACHMENT_SERVICE);
                     attachmentService = (IAttachmentService) serviceClass.newInstance();
@@ -579,23 +579,25 @@ public class DocViewer {
     }
 
 
-    public static void main(String[] args) {
-//        String path = "/home/icode/test/";
+    public static void main(String[] args) throws Exception {
+        DocViewer.initialize();
+        OfficeConverter converter = new OfficeConverter();
         try {
 
-            System.out.print(
-                    isSupport("xxpdf")
-            );
-//            byte[] keyValue = "abcs".getBytes("UTF-8");
-//            DocViewer.addConvertWorker(new File(path + "3489682.pdf"));
-//            DocViewer.addConvertWorker(new File(path + "3692243.pdf"));
-//            DocViewer.addConvertWorker(new File(path + "7828624.pdf"));
-//            DocViewer.addConvertWorker(new File(path + "test.pdf"));
-//            DocViewer.addConvertWorker(new File(path + "test.txt"));
-//            DocViewer.addConvertWorker(new File(path + "test1.doc"));
-        } catch (Exception e) {
+            File file = new File("/home/icode/Desktop/b.txt");
+
+            File outFile = new File("/home/icode/Desktop/b_encoded.txt");
+
+            FileUtils.convertFileEncodingToSys(file, outFile);
+
+            System.out.println("converted!");
+
+            converter.convert(outFile.getPath(), "/home/icode/Desktop/b.pdf");
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+        DocViewer.destroy();
 
     }
 
