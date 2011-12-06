@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/507/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper
+END
+IFlexPaperPlugin.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/507/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/IFlexPaperPlugin.as
+END
+IFlexPaperViewModePlugin.as
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/IFlexPaperViewModePlugin.as
+END
+IFlexPaperPluginControl.as
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/422/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/IFlexPaperPluginControl.as
+END
+Viewer.as
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/Viewer.as
+END
+ShapeMarker.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/422/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/ShapeMarker.as
+END
+FlexPaperViewer.mxml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/FlexPaperViewer.mxml
+END
+PrintRangeDialog.mxml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/422/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/PrintRangeDialog.mxml
+END
+ViewModeEnum.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/422/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/ViewModeEnum.as
+END
+About.mxml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/About.mxml
+END
+___FlexPaperViewer___mxml___YwDWHj
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/___FlexPaperViewer___mxml___YwDWHj
+END
+FlexPaperViewer_Base.mxml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/506/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/FlexPaperViewer_Base.mxml
+END
+FitModeEnum.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/422/trunk/FlexPaper_SDK4/src/com/devaldi/controls/flexpaper/FitModeEnum.as
+END
