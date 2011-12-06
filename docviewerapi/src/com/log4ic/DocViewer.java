@@ -507,7 +507,7 @@ public class DocViewer {
                     }
                 }
             } else {
-                File swf = new File(dir.getPath() + "page.swf");
+                File swf = new File(dir.getPath() + File.separator + "page.swf");
                 if (swf.exists() && swf.isFile() && swf.length() > 0) {
                     return true;
                 }
