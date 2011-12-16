@@ -114,6 +114,8 @@ public class OfficeConverter {
      *
      * @param inputFile
      * @param outputFile
+     * @throws java.io.IOException
+     * @return File
      */
     public File convert(File inputFile, File outputFile) throws IOException {
         try {
@@ -125,7 +127,11 @@ public class OfficeConverter {
                             && fileCharset.name().toLowerCase().equals("gb2312"))) {
                         String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded." + (this.isWindows() ? "odt" : "txt");
                         File encodedFile = new File(encodedFileName);
-                        FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
+                        try{
+                            FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
+                        }catch (Exception e){
+                            org.apache.commons.io.FileUtils.copyFile(inputFile, encodedFile);
+                        }
                         inputFile = encodedFile;
                     } else if (isWindows()) {
                         String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded.odt";

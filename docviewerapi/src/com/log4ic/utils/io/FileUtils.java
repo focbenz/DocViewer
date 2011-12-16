@@ -201,20 +201,31 @@ public class FileUtils {
         CharsetEncoder outEncoder = outCharset.newEncoder();
 
         CharBuffer cb = inDecoder.decode(byteMapper);
+        ByteBuffer outBuffer = null;
+        try {
+            outBuffer = outEncoder.encode(cb);
 
-        ByteBuffer outBuffer = outEncoder.encode(cb);
-
-        RandomAccessFile outRandom = null;
-        if (outFile != null) {
-            outRandom = new RandomAccessFile(outFile, "rw");
-            FileChannel outChannel = outRandom.getChannel();
-            outChannel.write(outBuffer);
-            outChannel.close();
-            outRandom.close();
+            RandomAccessFile outRandom = null;
+            FileChannel outChannel = null;
+            if (outFile != null) {
+                try {
+                    outRandom = new RandomAccessFile(outFile, "rw");
+                    outChannel = outRandom.getChannel();
+                    outChannel.write(outBuffer);
+                } finally {
+                    if (outChannel != null) {
+                        outChannel.close();
+                    }
+                    if (outRandom != null) {
+                        outRandom.close();
+                    }
+                }
+            }
+        } finally {
+            inChannel.close();
+            inRandom.close();
         }
 
-        inChannel.close();
-        inRandom.close();
 
         return outBuffer.array();
     }
