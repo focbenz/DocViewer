@@ -48,14 +48,18 @@ public class DocViewerConverter {
      * @throws Exception
      */
     public static File toSwf(File file, String outPath) throws Exception {
-        synchronized (lock) {
-            if (pdfConverter == null) {
-                //PDFConverter.loadConfig();
-                pdfConverter = new PDFConverter();
+        if (pdfConverter == null) {
+            synchronized (lock) {
+                if (pdfConverter == null) {
+                    //PDFConverter.loadConfig();
+                    pdfConverter = new PDFConverter();
+                }
             }
         }
         try {
-            runningQueue.add(file);
+            synchronized (lock) {
+                runningQueue.add(file);
+            }
             String suffix = FileUtils.getFileSuffix(file);
             if (StringUtils.isBlank(suffix)) {
                 throw new Exception("The file not has a suffix!");
@@ -67,18 +71,24 @@ public class DocViewerConverter {
 
             return pdfConverter.convert(pdf, outPath, DocViewer.isSplitPage(), false);
         } finally {
-            runningQueue.remove(file);
+            synchronized (lock) {
+                runningQueue.remove(file);
+            }
         }
     }
 
     public static File toPDF(File file, String outPath) throws Exception {
-        synchronized (lock) {
-            if (officeConverter == null) {
-                officeConverter = new OfficeConverter();
+        if (officeConverter == null) {
+            synchronized (lock) {
+                if (officeConverter == null) {
+                    officeConverter = new OfficeConverter();
+                }
             }
         }
         try {
-            runningQueue.add(file);
+            synchronized (lock) {
+                runningQueue.add(file);
+            }
             File pdf = null;
 
             File dir = deploy(file, outPath);
@@ -88,7 +98,9 @@ public class DocViewerConverter {
             }
             return pdf;
         } finally {
-            runningQueue.remove(file);
+            synchronized (lock) {
+                runningQueue.remove(file);
+            }
         }
     }
 }
