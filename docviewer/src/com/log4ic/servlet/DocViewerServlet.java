@@ -44,6 +44,7 @@ public class DocViewerServlet extends HttpServlet {
 
             response.setContentType("application/json");
             response.setStatus(202);
+            response.setHeader("Keep-Alive","timeout=60, max=10");
             response.flushBuffer();
             PrintWriter writer = response.getWriter();
 
