@@ -1,12 +1,15 @@
 package com.log4ic.utils.convert.office;
 
+import com.log4ic.utils.convert.office.document.OfficeDocumentFormatRegistry;
 import com.log4ic.utils.io.FileUtils;
 import com.sun.star.comp.helper.BootstrapException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.artofsolving.jodconverter.OfficeDocumentConverter;
 import org.artofsolving.jodconverter.document.DefaultDocumentFormatRegistry;
+import org.artofsolving.jodconverter.document.DocumentFormat;
 import org.artofsolving.jodconverter.document.DocumentFormatRegistry;
+import org.artofsolving.jodconverter.document.JsonDocumentFormatRegistry;
 import org.artofsolving.jodconverter.office.DefaultOfficeManagerConfiguration;
 import org.artofsolving.jodconverter.office.OfficeConnectionProtocol;
 import org.artofsolving.jodconverter.office.OfficeManager;
@@ -15,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.nio.charset.Charset;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -46,7 +50,15 @@ public class OfficeConverter {
      */
     private static int PORT = 8100;
 
-    private static DocumentFormatRegistry documentFormatRegistry = new DefaultDocumentFormatRegistry();
+    private static DocumentFormatRegistry documentFormatRegistry = null;
+
+    static {
+        try {
+            documentFormatRegistry = new OfficeDocumentFormatRegistry(OfficeConverter.class.getResourceAsStream("/conf/documentFormats.js"));
+        } catch (Exception e) {
+            LOGGER.error(e);
+        }
+    }
 
     private static Properties properties;
 
@@ -54,6 +66,9 @@ public class OfficeConverter {
         return documentFormatRegistry.getFormatByExtension(fileExtends) != null;
     }
 
+    public static List<DocumentFormat> getAllSupport() {
+        return ((OfficeDocumentFormatRegistry) documentFormatRegistry).getDocumentFormats();
+    }
 
     /**
      * 将office转换为PDF
@@ -114,8 +129,8 @@ public class OfficeConverter {
      *
      * @param inputFile
      * @param outputFile
-     * @throws java.io.IOException
      * @return File
+     * @throws java.io.IOException
      */
     public File convert(File inputFile, File outputFile) throws IOException {
         try {
@@ -127,9 +142,9 @@ public class OfficeConverter {
                             && fileCharset.name().toLowerCase().equals("gb2312"))) {
                         String encodedFileName = FileUtils.getFilePrefix(inputFile.getPath()) + "_encoded." + (this.isWindows() ? "odt" : "txt");
                         File encodedFile = new File(encodedFileName);
-                        try{
+                        try {
                             FileUtils.convertFileEncodingToSys(inputFile, encodedFile);
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             org.apache.commons.io.FileUtils.copyFile(inputFile, encodedFile);
                         }
                         inputFile = encodedFile;

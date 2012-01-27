@@ -290,4 +290,68 @@ public class FileUtils {
         return convertFileEncoding(inFile, outFile, Charset.defaultCharset());
     }
 
+
+    /**
+     * 将数据写入文件
+     *
+     * @param inputStream
+     * @param filePath
+     * @return
+     */
+    public static File writeFile(InputStream inputStream, String filePath) {
+        FileOutputStream out = null;
+        FileChannel outChannel = null;
+
+        File file = new File(filePath);
+
+        if (!file.getParentFile().exists()) {
+            file.getParentFile().mkdirs();
+        }
+
+        try {
+
+            out = new FileOutputStream(file);
+            outChannel = out.getChannel();
+
+            byte[] buffer = new byte[1024];
+
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
+
+            ByteBuffer outBuffer = ByteBuffer.allocate(buffer.length);
+
+            while (bufferedInputStream.read(buffer)!=-1) {
+                outBuffer.put(buffer);
+                outBuffer.flip();
+                outChannel.write(outBuffer);
+                outBuffer.clear();
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (outChannel != null) {
+                try {
+                    outChannel.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (out != null) {
+                try {
+                    out.flush();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return file.exists() ? file : null;
+    }
 }

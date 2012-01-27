@@ -2,6 +2,9 @@ package com.log4ic.servlet;
 
 import com.log4ic.DocViewer;
 import com.log4ic.enums.Permissions;
+import com.log4ic.utils.io.Uploader;
+import com.log4ic.utils.io.UploaderFile;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -11,6 +14,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.List;
 
 /**
  * @author: 张立鑫
@@ -22,6 +30,8 @@ public class DocViewerServlet extends HttpServlet {
 
     public void getDocInfo(HttpServletRequest request, HttpServletResponse response) {
 
+        PrintWriter writer = null;
+
         try {
             String id = request.getParameter("docId");
             LOGGER.info("请求文档信息 ID:" + id);
@@ -31,7 +41,7 @@ public class DocViewerServlet extends HttpServlet {
                 return;
             }
 
-            
+
             int docId = Integer.parseInt(id);
             LOGGER.info("获取文档权限...");
             Permissions permissions = DocViewer.getAttachmentService().getDocPermissionsById(docId, request);
@@ -44,9 +54,9 @@ public class DocViewerServlet extends HttpServlet {
 
             response.setContentType("application/json");
             response.setStatus(202);
-            response.setHeader("Keep-Alive","600");
+            response.setHeader("Keep-Alive", "600");
             response.flushBuffer();
-            PrintWriter writer = response.getWriter();
+            writer = response.getWriter();
 
             writer.flush();
 
@@ -73,11 +83,14 @@ public class DocViewerServlet extends HttpServlet {
             } else {
                 writer.write("{\"uri\":\"" + docUri + "\",\"permissions\":" + permissions.ordinal() + "}");
             }
-            writer.flush();
-            writer.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error(e);
             response.setStatus(404);
+        } finally {
+            if (writer != null) {
+                writer.flush();
+                writer.close();
+            }
         }
     }
 
@@ -157,13 +170,13 @@ public class DocViewerServlet extends HttpServlet {
             }
         } catch (Exception ex) {
             response.setStatus(404);
-            ex.printStackTrace();
+            LOGGER.error(ex);
         } finally {
             if (in != null) {
                 try {
                     in.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    LOGGER.error(e);
                 }
                 in = null;
             }
@@ -172,22 +185,68 @@ public class DocViewerServlet extends HttpServlet {
                     outp.flush();
                     outp.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    LOGGER.error(e);
                 }
                 outp = null;
             }
         }
     }
 
+    private void uploadFile(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            List<UploaderFile> uploaderFileList = Uploader.getFileList();
+            if (uploaderFileList.size() > 0) {
+                String path = this.getClass().getResource("/").getPath();
+                for (UploaderFile file : uploaderFileList) {
+                    FileUtils.copyFile(file, new File(path + File.separator + "documents" + File.separator + file.getName()));
+                }
+            }
+        } catch (Exception e) {
+            LOGGER.error(e);
+        } finally {
+        }
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LOGGER.info("DocViewer doGet:" + req.getContextPath() + "/docviewer/info");
         if (req.getRequestURI().equals(req.getContextPath() + "/docviewer/info")) {
+            LOGGER.info("DocViewer doGet:" + req.getContextPath() + "/docviewer/info");
             LOGGER.info("请求文档信...");
             getDocInfo(req, resp);
         } else if (req.getRequestURI().equals(req.getContextPath() + "/docviewer")) {
+            LOGGER.info("DocViewer doGet:" + req.getContextPath() + "/docviewer");
             LOGGER.info("加载文档...");
             getDoc(req, resp);
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getRequestURI().equals(req.getContextPath() + "/docviewer/upload")) {
+            LOGGER.info("DocViewer doPost:" + req.getContextPath() + "/docviewer/upload");
+            LOGGER.info("上传文件...");
+            uploadFile(req, resp);
+        }
+    }
+
+    public static void main(String[] args) {
+        String driver = "org.apache.derby.jdbc.EmbeddedDriver";//在derby.jar里面
+        String dbName="EmbeddedDB";
+        String dbURL = "jdbc:derby:"+dbName+";create=true";//create=true表示当数据库不存在时就创建它
+        try {
+            Class.forName(driver);
+            Connection conn = DriverManager.getConnection(dbURL);//启动嵌入式数据库
+            Statement st = conn.createStatement();
+//            st.execute("create table foo (FOOID INT NOT NULL,FOONAME VARCHAR(30) NOT NULL)");//创建foo表
+            st.executeUpdate("delete from foo");//插入一条数据
+            ResultSet rs = st.executeQuery("select * from foo");//读取刚插入的数据
+            while(rs.next()){
+                int id = rs.getInt(1);
+                String name = rs.getString(2);
+                System.out.println("id="+id+";name="+name);
+            }
+        } catch(Exception e){
+            e.printStackTrace();
         }
     }
 }

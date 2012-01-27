@@ -4,6 +4,7 @@ import com.log4ic.entity.IDocAttachment;
 import com.log4ic.services.IAttachmentService;
 import com.log4ic.utils.convert.*;
 import com.log4ic.utils.convert.office.OfficeConverter;
+import com.log4ic.utils.convert.office.document.OfficeDocumentFormatRegistry;
 import com.log4ic.utils.convert.pdf.PDFConverter;
 import com.log4ic.utils.io.FileUtils;
 import com.log4ic.utils.io.filter.SplitSwfFileFilter;
@@ -11,10 +12,12 @@ import com.log4ic.utils.security.XXTEA;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.artofsolving.jodconverter.document.DocumentFormat;
 import org.artofsolving.jodconverter.office.OfficeConnectionProtocol;
 
 import java.io.*;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 
@@ -139,6 +142,9 @@ public class DocViewer {
         return OfficeConverter.isSupport(fileExtends);
     }
 
+    public static List<DocumentFormat> getAllSupport() {
+        return OfficeConverter.getAllSupport();
+    }
 
     DocViewer() {
     }

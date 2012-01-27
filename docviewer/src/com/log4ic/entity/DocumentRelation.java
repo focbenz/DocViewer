@@ -5,6 +5,7 @@ package com.log4ic.entity;
  * @date: 12-1-23
  * @time: 上午2:55
  */
+@Entity
 public class DocumentRelation {
     private int id;
     private String fileName;
