@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Resource name="siniteksirm" auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="oracle.jdbc.OracleDriver"
+              url="jdbc:oracle:thin:@192.168.20.160:1521:sirmutf8"
+              username="sirm2"
+              password="sirm2"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="-1"
+              testOnBorrow="true"
+              validationQuery="select 1 from dual"/>
+
+    <Resource name="finchina" auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="oracle.jdbc.OracleDriver"
+              url="jdbc:oracle:thin:@192.168.1.100:1521:orcl"
+              username="finchinaDBPush"
+              password="finchinaDBPush"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="-1"
+              testOnBorrow="true"
+              validationQuery="select 1 from dual"/>
+
+    <Resource name="findconforecast" auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="oracle.jdbc.OracleDriver"
+              url="jdbc:oracle:thin:@192.168.20.160:1521:sirmutf8"
+              username="sirm2"
+              password="sirm2"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="-1"
+              testOnBorrow="true"
+              validationQuery="select 1 from dual"/>
+</Context>
