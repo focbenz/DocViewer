@@ -1,4 +1,4 @@
-package com.log4ic.support;
+package com.log4ic.utils.support;
 
 import com.log4ic.DocViewer;
 import org.apache.commons.logging.Log;

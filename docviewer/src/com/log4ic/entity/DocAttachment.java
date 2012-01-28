@@ -57,4 +57,28 @@ public class DocAttachment implements IDocAttachment {
     public Permissions getPermissions() {
         return permissions;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setContentSize(Long contentSize) {
+        this.contentSize = contentSize;
+    }
+
+    public void setPageCount(Integer pageCount) {
+        this.pageCount = pageCount;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public void setContentStream(InputStream contentStream) {
+        this.contentStream = contentStream;
+    }
+
+    public void setPermissions(Permissions permissions) {
+        this.permissions = permissions;
+    }
 }

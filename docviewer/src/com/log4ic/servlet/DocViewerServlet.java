@@ -1,6 +1,8 @@
 package com.log4ic.servlet;
 
 import com.log4ic.DocViewer;
+import com.log4ic.dao.impl.DocumentRelationDao;
+import com.log4ic.entity.DocumentRelation;
 import com.log4ic.enums.Permissions;
 import com.log4ic.utils.io.Uploader;
 import com.log4ic.utils.io.UploaderFile;
@@ -14,10 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -192,14 +192,26 @@ public class DocViewerServlet extends HttpServlet {
         }
     }
 
+    private DocumentRelationDao relationDao = new DocumentRelationDao();
+
     private void uploadFile(HttpServletRequest request, HttpServletResponse response) {
         try {
             List<UploaderFile> uploaderFileList = Uploader.getFileList();
             if (uploaderFileList.size() > 0) {
                 String path = this.getClass().getResource("/").getPath();
                 for (UploaderFile file : uploaderFileList) {
-                    FileUtils.copyFile(file, new File(path + File.separator + "documents" + File.separator + file.getName()));
+                    File newFile = new File(path + File.separator + "documents" + File.separator + file.getName());
+                    FileUtils.copyFile(file, newFile);
+                    DocumentRelation relation = new DocumentRelation();
+                    relation.setFileName(file.getUploadName());
+                    relation.setLocation(newFile.getPath());
+                    relation.setCreateDate(new Timestamp(System.currentTimeMillis()));
+                    relationDao.save(relation);
+                    relation = relationDao.getRelationByLocation(relation.getLocation());
+                    DocViewer.addConvertWorker(relation.getId());
                 }
+
+                response.sendRedirect("/continue.jsp");
             }
         } catch (Exception e) {
             LOGGER.error(e);
@@ -229,24 +241,4 @@ public class DocViewerServlet extends HttpServlet {
         }
     }
 
-    public static void main(String[] args) {
-        String driver = "org.apache.derby.jdbc.EmbeddedDriver";//在derby.jar里面
-        String dbName="EmbeddedDB";
-        String dbURL = "jdbc:derby:"+dbName+";create=true";//create=true表示当数据库不存在时就创建它
-        try {
-            Class.forName(driver);
-            Connection conn = DriverManager.getConnection(dbURL);//启动嵌入式数据库
-            Statement st = conn.createStatement();
-//            st.execute("create table foo (FOOID INT NOT NULL,FOONAME VARCHAR(30) NOT NULL)");//创建foo表
-            st.executeUpdate("delete from foo");//插入一条数据
-            ResultSet rs = st.executeQuery("select * from foo");//读取刚插入的数据
-            while(rs.next()){
-                int id = rs.getInt(1);
-                String name = rs.getString(2);
-                System.out.println("id="+id+";name="+name);
-            }
-        } catch(Exception e){
-            e.printStackTrace();
-        }
-    }
 }

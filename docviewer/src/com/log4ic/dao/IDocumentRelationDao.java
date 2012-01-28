@@ -5,6 +5,7 @@ import com.log4ic.entity.DocumentRelation;
 import javax.naming.NamingException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @author 张立鑫 IntelligentCode
@@ -13,6 +14,7 @@ import java.sql.SQLException;
  */
 public interface IDocumentRelationDao {
     void save(DocumentRelation relation) throws NamingException, SQLException;
-    ResultSet getAllRelation() throws NamingException, SQLException;
+    List<DocumentRelation> getAllRelation() throws NamingException, SQLException;
     DocumentRelation getRelation(int id) throws NamingException, SQLException;
+    DocumentRelation getRelationByLocation(String location) throws NamingException, SQLException ;
 }
