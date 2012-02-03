@@ -7,6 +7,7 @@ import com.log4ic.enums.Permissions;
 import com.log4ic.utils.io.Uploader;
 import com.log4ic.utils.io.UploaderFile;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -17,8 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.sql.*;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author: 张立鑫
@@ -207,8 +207,10 @@ public class DocViewerServlet extends HttpServlet {
                     relation.setLocation(newFile.getPath());
                     relation.setCreateDate(new Timestamp(System.currentTimeMillis()));
                     relationDao.save(relation);
-                    relation = relationDao.getRelationByLocation(relation.getLocation());
-                    DocViewer.addConvertWorker(relation.getId());
+                    if(DocViewer.isSupport(FilenameUtils.getExtension(file.getUploadName()))){
+                        relation = relationDao.getRelationByLocation(relation.getLocation());
+                        DocViewer.addConvertWorker(relation.getId());
+                    }
                 }
 
                 response.sendRedirect("/continue.jsp");
