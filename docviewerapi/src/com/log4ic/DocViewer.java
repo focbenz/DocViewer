@@ -248,22 +248,27 @@ public class DocViewer {
         OfficeConverter.stopService();
     }
 
-    private synchronized static void checkWorker(ConvertWorker worker) throws Exception {
+    private synchronized static boolean checkWorker(ConvertWorker worker) throws Exception {
         worker.setOutputPath(OUTPUT_PATH);
         if (worker.getInFile() == null) {
-            throw new Exception("input file is null");
+            return false;
         }
+        return true;
     }
 
     public synchronized static void addConvertWorker(PDFConvertWorker worker) throws Exception {
-        checkWorker(worker);
+        if (!checkWorker(worker)) {
+            return;
+        }
         synchronized (pdfQueue) {
             pdfQueue.addWorker(worker);
         }
     }
 
     public synchronized static void addConvertWorker(OfficeConvertWorker worker) throws Exception {
-        checkWorker(worker);
+        if (!checkWorker(worker)) {
+            return;
+        }
         synchronized (officeQueue) {
             officeQueue.addWorker(worker);
         }
