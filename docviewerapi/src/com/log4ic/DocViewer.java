@@ -146,7 +146,7 @@ public class DocViewer {
         return OfficeConverter.getAllSupport();
     }
 
-    DocViewer() {
+    private DocViewer() {
     }
 
     public static void initialize() throws Exception {

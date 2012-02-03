@@ -19,32 +19,9 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652659cf-4b74-429d-8e5e-61851e29736d" name="Default" comment="根据网友反映 生成的flash 10版本兼容性不是很好，故更改成flash 9">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractEntitySupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/FileScanner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/ClassNameScannerFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/IScannerFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/support/DataBaseSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/support/scanner/filter/AnnotationFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/web/filter/CharacterEncodingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docviewer/web/continue.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/entity/Column.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/entity/Table.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractDaoSupport.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractJdbcSupport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/DocviewerDaoSupport.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/DocViewerJdbcSupport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/support/DocViewerServiceListener.java" afterPath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/support/DocViewerServiceListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/docviewer.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/docviewer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+    <list default="true" id="652659cf-4b74-429d-8e5e-61851e29736d" name="Default" comment="增加文档上传并后台转换的例子">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/IDocumentRelationDao.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/IDocumentRelationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/impl/DocumentRelationDao.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/impl/DocumentRelationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocAttachment.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocAttachment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocumentRelation.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocumentRelation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/service/DocAttachmentService.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/service/DocAttachmentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" afterPath="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/web/META-INF/context.xml" afterPath="$PROJECT_DIR$/docviewer/web/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewer/web/documents.jsp" afterPath="$PROJECT_DIR$/docviewer/web/documents.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" afterPath="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" />
     </list>
     <ignored path="docviwer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,34 +43,6 @@
     <groupTables value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" line="253" class="com.log4ic.DocViewer" package="com.log4ic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/OfficeConvertWorker.java" line="39" class="com.log4ic.utils.convert.OfficeConvertWorker" package="com.log4ic.utils.convert">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -191,9 +140,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/FileScanner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="25" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -228,7 +175,7 @@
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="422" selection-end="422" vertical-scroll-proportion="-4.75">
+            <state line="7" column="47" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,9 +185,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/web/filter/CharacterEncodingFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="44" column="46" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -248,7 +193,7 @@
       <file leaf-file-name="context.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/web/META-INF/context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="53" selection-start="277" selection-end="277" vertical-scroll-proportion="-3.392857">
+            <state line="5" column="53" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -281,10 +226,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfficeConvertWorker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OfficeConvertWorker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/OfficeConvertWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.6409736">
+            <state line="39" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocViewerServiceListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/support/DocViewerServiceListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -293,7 +247,7 @@
       <file leaf-file-name="PDFConvertWorker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/PDFConvertWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+            <state line="11" column="46" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,19 +262,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertWorker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/ConvertWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DocViewerServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="0" selection-start="7435" selection-end="7435" vertical-scroll-proportion="0.0">
+            <state line="15" column="37" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -329,7 +274,7 @@
       <file leaf-file-name="continue.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/web/continue.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="242" selection-end="242" vertical-scroll-proportion="-4.75">
+            <state line="10" column="15" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -348,9 +293,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractJdbcSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="207" column="27" selection-start="7364" selection-end="7364" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -386,9 +329,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/dao/impl/DocumentRelationDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="46" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1172#1190#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -397,10 +338,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/support/scanner/filter/AnnotationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="28" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#688#695#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -409,9 +347,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/support/DataBaseSupport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="37" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -447,10 +383,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/ClassNameScannerFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="73" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#388#396#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -459,9 +392,7 @@
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/IScannerFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="66" selection-start="266" selection-end="291" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -469,7 +400,7 @@
       <file leaf-file-name="DocAttachment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocAttachment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="-2.64">
+            <state line="29" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -478,7 +409,7 @@
       <file leaf-file-name="documents.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/web/documents.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="57" selection-start="1251" selection-end="1251" vertical-scroll-proportion="-7.714286">
+            <state line="41" column="57" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -487,7 +418,7 @@
       <file leaf-file-name="docviewer.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docviewer/web/docviewer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="30" selection-start="844" selection-end="844" vertical-scroll-proportion="-7.464286">
+            <state line="23" column="30" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -502,10 +433,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocViewer.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DocViewer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="66" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.0">
+            <state line="151" column="12" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.14393939">
               <folding />
             </state>
           </provider>
@@ -552,8 +483,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="/docviewerDB" />
-        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" />
         <option value="$PROJECT_DIR$/docviewer/web/continue.jsp" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/IDocumentRelationDao.java" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/DocViewerJdbcSupport.java" />
@@ -563,11 +492,13 @@
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/FileScanner.java" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/support/DataBaseSupport.java" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocumentRelation.java" />
-        <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractJdbcSupport.java" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/dao/impl/DocumentRelationDao.java" />
         <option value="$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/utils/web/filter/CharacterEncodingFilter.java" />
+        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/OfficeConvertWorker.java" />
+        <option value="$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java" />
+        <option value="$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java" />
       </list>
     </option>
   </component>
@@ -586,10 +517,9 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="-6" />
-    <option name="width" value="1368" />
-    <option name="height" value="775" />
+    <option name="width" value="1366" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -691,7 +621,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
+              <option name="myItemId" value="log4ic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,6 +640,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="log4ic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviwer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docviewerapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log4ic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1226,7 +1186,7 @@
       <recent name="$PROJECT_DIR$/docviewer/web/resources/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.docviwer">
+  <component name="RunManager">
     <configuration default="false" name="docviewerflex" type="FlexRunConfigurationType" factoryName="Flex" temporary="true" browser_family="FIREFOX" debugger_sdk="Module SDK" html_or_swf_file_path="$PROJECT_DIR$/out/production/docviewerflex/_DocViewerFlex.swf" launcher_type="Player" main_class_name="DocViewerFlex" module_name="docviewerflex" player_path="$USER_HOME$/Program/flex_sdk_4.5.1.21328/runtimes/player/10.2/lnx/flashplayerdebugger" run_mode="MainClass" run_trusted="false" url_to_launch="http://">
       <RunnerSettings RunnerId="FlexDebugRunner" />
       <RunnerSettings RunnerId="FlexRunner" />
@@ -1234,90 +1194,10 @@
       <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="DocViewerServlet" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.log4ic.servlet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.log4ic.servlet.DocViewerServlet" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="docviewer" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
     <configuration default="false" name="Default" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console" temporary="true">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FileScanner" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.log4ic.utils.io.scanner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.log4ic.utils.io.scanner.FileScanner" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="docviewer" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="AnnotationFilter" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.log4ic.utils.support.scanner.filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.log4ic.utils.support.scanner.filter.AnnotationFilter" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="docviewer" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1587,13 +1467,10 @@
         </option>
       </method>
     </configuration>
-    <list size="6">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Flex.docviewerflex" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.docviwer" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DocViewerServlet" />
-      <item index="3" class="java.lang.String" itemvalue="Query Language Console.Default" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FileScanner" />
-      <item index="5" class="java.lang.String" itemvalue="Application.AnnotationFilter" />
+      <item index="1" class="java.lang.String" itemvalue="Query Language Console.Default" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.docviwer" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1648,14 +1525,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-6" width="1368" height="775" extended-state="6" />
+    <frame x="0" y="-6" width="1366" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.67147434" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.58678955" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3846154" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1669,12 +1544,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.5657051" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32701063" sideWeight="0.61538464" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32549316" sideWeight="0.6458333" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1804,43 +1681,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/java/jdk1.6.0_26/src.zip!/java/lang/StringBuffer.java">
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractEntitySupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="389" column="37" selection-start="12211" selection-end="12211" vertical-scroll-proportion="-0.27466667">
+        <state line="7" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/web/documents.jsp">
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/DocViewerJdbcSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="57" selection-start="1251" selection-end="1251" vertical-scroll-proportion="-7.714286">
+        <state line="26" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/ClassNameScannerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="73" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#388#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/java/jdk1.6.0_26/src.zip!/java/sql/Timestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="43" selection-start="1689" selection-end="1690" vertical-scroll-proportion="-0.050666668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/dao/AbstractJdbcSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="27" selection-start="7364" selection-end="7364" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1851,62 +1702,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/dao/IDocumentRelationDao.java">
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/ClassNameScannerFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+        <state line="28" column="73" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/dao/impl/DocumentRelationDao.java">
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/io/scanner/filter/IScannerFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="46" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1172#1190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="0" selection-start="7435" selection-end="7435" vertical-scroll-proportion="0.0">
+        <state line="12" column="66" selection-start="266" selection-end="291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/web/META-INF/context.xml">
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/entity/DocAttachment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="53" selection-start="277" selection-end="277" vertical-scroll-proportion="-3.392857">
+        <state line="29" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/docviewer/web/documents.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="422" selection-end="422" vertical-scroll-proportion="-4.75">
+        <state line="41" column="57" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/utils/web/filter/CharacterEncodingFilter.java">
+    <entry file="file://$PROJECT_DIR$/docviewer/web/docviewer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="46" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="23" column="30" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/UploaderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/thread/ThreadPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="29" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="66" selection-start="9842" selection-end="9842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1918,9 +1758,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerapi/src/conf/documentFormats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="27" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewer/src/com/log4ic/servlet/DocViewerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="37" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/convert/OfficeConvertWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.6409736">
+        <state line="39" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/utils/support/DocViewerServiceListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docviewerapi/src/com/log4ic/DocViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="12" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.14393939">
           <folding />
         </state>
       </provider>
