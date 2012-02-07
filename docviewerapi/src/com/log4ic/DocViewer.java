@@ -4,7 +4,6 @@ import com.log4ic.entity.IDocAttachment;
 import com.log4ic.services.IAttachmentService;
 import com.log4ic.utils.convert.*;
 import com.log4ic.utils.convert.office.OfficeConverter;
-import com.log4ic.utils.convert.office.document.OfficeDocumentFormatRegistry;
 import com.log4ic.utils.convert.pdf.PDFConverter;
 import com.log4ic.utils.io.FileUtils;
 import com.log4ic.utils.io.filter.SplitSwfFileFilter;
@@ -146,7 +145,7 @@ public class DocViewer {
         return OfficeConverter.getAllSupport();
     }
 
-    private DocViewer() {
+    protected DocViewer() {
     }
 
     public static void initialize() throws Exception {
