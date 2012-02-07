@@ -167,7 +167,7 @@ public class OfficeConverter {
         return null;
     }
 
-    public static void startService() throws Exception {
+    public static void startService(){
         DefaultOfficeManagerConfiguration configuration = new DefaultOfficeManagerConfiguration();
         try {
             LOGGER.debug("准备启动服务....");
