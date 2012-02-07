@@ -2,7 +2,6 @@ package com.log4ic.utils.convert.office;
 
 import com.log4ic.utils.convert.office.document.OfficeDocumentFormatRegistry;
 import com.log4ic.utils.io.FileUtils;
-import com.sun.star.comp.helper.BootstrapException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.artofsolving.jodconverter.OfficeDocumentConverter;
@@ -191,7 +190,7 @@ public class OfficeConverter {
 
     }
 
-    public static void stopService() throws Exception, BootstrapException {
+    public static void stopService() {
         LOGGER.debug("关闭office转换服务....");
         if (officeManager != null) {
             officeManager.stop();
