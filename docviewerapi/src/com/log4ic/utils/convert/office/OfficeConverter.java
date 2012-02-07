@@ -16,7 +16,6 @@ import java.io.IOException;
 import java.net.ConnectException;
 import java.nio.charset.Charset;
 import java.util.List;
-import java.util.Properties;
 
 /**
  * @author: 张立鑫
@@ -57,7 +56,6 @@ public class OfficeConverter {
         }
     }
 
-    private static Properties properties;
 
     public static boolean isSupport(String fileExtends) {
         return documentFormatRegistry.getFormatByExtension(fileExtends) != null;
