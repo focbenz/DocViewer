@@ -4,7 +4,6 @@ import javolution.util.FastList;
 import org.apache.commons.io.IOUtils;
 import org.artofsolving.jodconverter.document.DocumentFamily;
 import org.artofsolving.jodconverter.document.DocumentFormat;
-import org.artofsolving.jodconverter.document.JsonDocumentFormatRegistry;
 import org.artofsolving.jodconverter.document.SimpleDocumentFormatRegistry;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,7 +11,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -72,6 +70,7 @@ public class OfficeDocumentFormatRegistry extends SimpleDocumentFormatRegistry {
     protected List<DocumentFormat> documentFormats = new FastList<DocumentFormat>();
 
     public void addFormat(DocumentFormat documentFormat) {
+        super.addFormat(documentFormat);
         documentFormats.add(documentFormat);
     }
 
