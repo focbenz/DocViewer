@@ -6,10 +6,8 @@ import com.sun.star.comp.helper.BootstrapException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.artofsolving.jodconverter.OfficeDocumentConverter;
-import org.artofsolving.jodconverter.document.DefaultDocumentFormatRegistry;
 import org.artofsolving.jodconverter.document.DocumentFormat;
 import org.artofsolving.jodconverter.document.DocumentFormatRegistry;
-import org.artofsolving.jodconverter.document.JsonDocumentFormatRegistry;
 import org.artofsolving.jodconverter.office.DefaultOfficeManagerConfiguration;
 import org.artofsolving.jodconverter.office.OfficeConnectionProtocol;
 import org.artofsolving.jodconverter.office.OfficeManager;
@@ -186,6 +184,7 @@ public class OfficeConverter {
             officeManager.start();
             LOGGER.debug("office转换服务启动成功!");
         } catch (Exception ce) {
+            LOGGER.error("office转换服务启动失败!详细信息:" + ce);
         } finally {
 
         }
