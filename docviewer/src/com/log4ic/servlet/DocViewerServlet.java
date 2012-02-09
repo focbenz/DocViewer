@@ -133,7 +133,7 @@ public class DocViewerServlet extends HttpServlet {
                 outp = response.getOutputStream();
                 if (DocViewer.isSplitPage()) {
                     if (DocViewer.isEncryption()) {
-                        LOGGER.info("解密文档...");
+                        LOGGER.info("加密文档...");
                         if (DocViewer.isDynamicKey()) {
                             byte[] page = DocViewer.encryptToBytes(docId, docPage, secretKey);
                             in = new ByteArrayInputStream(page);
@@ -146,7 +146,7 @@ public class DocViewerServlet extends HttpServlet {
                     }
                 } else {
                     if (DocViewer.isEncryption()) {
-                        LOGGER.info("解密文档...");
+                        LOGGER.info("加密文档...");
                         if (DocViewer.isDynamicKey()) {
                             byte[] page = DocViewer.encryptToBytes(docId, secretKey);
                             in = new ByteArrayInputStream(page);

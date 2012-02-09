@@ -51,7 +51,7 @@ public class PDFConverter {
         setCommand(command);
     }
 
-    public int execConvertCommand(String command, final List<String> outResources) throws InterruptedException, IOException {
+    public int execCommand(String command, final List<String> outResources) throws InterruptedException, IOException {
         LOGGER.debug(command);
         final Process convertProcess = Runtime.getRuntime().exec(command);
         final InputStream inputStream = convertProcess.getInputStream();
@@ -133,44 +133,61 @@ public class PDFConverter {
         }
 
         outPath = FileUtils.appendFileSeparator(outputDirectory.getPath());
+        File pdf = new File(FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf");
+        File info = new File(FileUtils.appendFileSeparator(outputDirectory.getPath()) + "info");
+        int pageCount = 0;
+        if (!pdf.exists() && !info.exists()) {
 
-        PdfReader reader = new PdfReader(pdfPath);
-        int pageCount = reader.getNumberOfPages();
+            PdfReader reader = new PdfReader(pdfPath);
+            pageCount = reader.getNumberOfPages();
 
-        // if pdf is a encrypted file unencrypted
-        if (reader.isEncrypted()) {
-            LOGGER.debug("encrypted pdf! 准备另存");
-            pdfPath = PDFSecurer.decrypt(reader, FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf").getPath();
-            LOGGER.debug("PDF解密完成");
-        } else {
-            LOGGER.debug("---文档未加密---");
-        }
-
-        reader.close();
-
-        if (pageCount != 0) {
-            OutputStream out = null;
-            try {
-                File info = new File(FileUtils.appendFileSeparator(outputDirectory.getPath()) + "info");
-
-                info.createNewFile();
-
-                out = new FileOutputStream(info);
-
-                out.write((pageCount + "").getBytes("UTF-8"));
-            } finally {
-                if (out != null) {
-                    out.flush();
-                    out.close();
-                }
+            // if pdf is a encrypted file unencrypted
+            if (reader.isEncrypted()) {
+                LOGGER.debug("encrypted pdf! 准备另存");
+                pdfPath = PDFSecurer.decrypt(reader, FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf").getPath();
+                LOGGER.debug("PDF解密完成");
+            } else {
+                LOGGER.debug("---文档未加密---");
             }
 
+            reader.close();
+
+            if (pageCount != 0) {
+                OutputStream out = null;
+                try {
+
+                    info.createNewFile();
+
+                    out = new FileOutputStream(info);
+
+                    out.write((pageCount + "").getBytes("UTF-8"));
+                } finally {
+                    if (out != null) {
+                        out.flush();
+                        out.close();
+                    }
+                }
+
+            }
+        } else {
+            pdfPath = pdf.getPath();
+            FileInputStream in = new FileInputStream(info);
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+
+            try {
+                pageCount = Integer.parseInt(reader.readLine());
+            } catch (Exception e) {
+            } finally {
+                reader.close();
+                in.close();
+            }
         }
 
         return new PDFConverterDeploy(outputDirectory, pageCount, COMMAND.replace("${in}", pdfPath)
                 .replace("${out}", outPath + (splitPage ? "page%.swf" : "page.swf")) +
                 //是否将图片转换成点阵形式
-                (poly2bitmap ? " -s poly2bitmap" : ""));
+                (poly2bitmap ? " -s poly2bitmap -s multiply=4" : ""));
 
     }
 
@@ -205,11 +222,11 @@ public class PDFConverter {
         return error;
     }
 
-    private void errorHandler(List<String> outResources, final File pdfFile, final String outPath, boolean splitPage, boolean poly2bitmap) throws Exception {
+    private void errorHandler(String command, final File pdfFile, final String outPath, boolean splitPage, boolean poly2bitmap, List<String> outResources) throws Exception {
         // 如果第一次没有将图片转换成点阵图报错，则进行第二次转换，并将图片转换成点阵
         final PDFConvertError error = checkError(outResources);
         if (error.getType() == PDFConvertErrorType.COMPLEX && poly2bitmap != true) {
-            LOGGER.debug("---第一次转换失败，进行第二次转换---");
+            LOGGER.debug("---第一次转换失败，进行第二次转换 poly2bitmap = true ---");
             if (splitPage) {
                 new Thread() {
                     public void run() {
@@ -222,7 +239,7 @@ public class PDFConverter {
                 }.start();
                 convertAsOnePageMode(pdfFile, outPath, error.getPosition() + 1);
             } else {
-                convert(pdfFile, outPath, true);
+                convert(pdfFile, outPath, splitPage, true);
             }
         } else {
             throw new Exception("Conversion failed:" + error.getType() + ";\n" + StringUtils.join(outResources, "\n"));
@@ -230,13 +247,13 @@ public class PDFConverter {
     }
 
     public void run(String command, File pdfFile, String outPath, boolean splitPage, boolean poly2bitmap) throws Exception {
-        LOGGER.debug("---转换开始---");
+        LOGGER.debug("---开始---");
         List<String> outResources = new ArrayList<String>();
 
-        if (execConvertCommand(command, outResources) != 0) {
-            errorHandler(outResources, pdfFile, outPath, splitPage, poly2bitmap);
+        if (execCommand(command, outResources) != 0) {
+            errorHandler(command, pdfFile, outPath, splitPage, poly2bitmap, outResources);
         }
-        LOGGER.debug("---转换结束---");
+        LOGGER.debug("---结束---");
     }
 
     public File convertAsOnePageMode(File pdfFile, String outPath) throws Exception {
@@ -272,18 +289,17 @@ public class PDFConverter {
                 public void run() {
                     List<String> outResources = new ArrayList<String>();
                     try {
-                        if (execConvertCommand(commandExec, outResources) != 0) {
+                        if (execCommand(commandExec, outResources) != 0) {
                             PDFConvertError error = checkError(outResources);
                             if (error.getType() == PDFConvertErrorType.COMPLEX && poly2bitmap != true) {
                                 LOGGER.debug("---第一次转换失败，进行第二次转换---");
-                                execConvertCommand(commandExec + " -s poly2bitmap", outResources);
+                                execCommand(commandExec + " -s poly2bitmap", outResources);
                             } else if (error.getType() != PDFConvertErrorType.NONE) {
                                 throw new Exception("Conversion failed:" + error.getType() + ";\n" + StringUtils.join(outResources, "\n"));
                             }
                         }
                     } catch (Exception e) {
                         LOGGER.error(e);
-                        e.printStackTrace();
                     }
 
                 }

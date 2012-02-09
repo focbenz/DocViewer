@@ -73,7 +73,7 @@
                 return bp;
             },
             uploader = new plupload.Uploader($.extend({
-                runtimes:'html5,gears,flash,silverlight,html4',
+                runtimes:'gears,flash,silverlight,html5,html4',
                 url:contextPath + 'upload',
                 max_file_size:maxSize || '1024mb',
                 chunk_size:(chunkSize / 1024) + 'mb',
