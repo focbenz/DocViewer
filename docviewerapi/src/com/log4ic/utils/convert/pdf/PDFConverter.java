@@ -133,21 +133,24 @@ public class PDFConverter {
         }
 
         outPath = FileUtils.appendFileSeparator(outputDirectory.getPath());
-        File pdf = new File(FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf");
+        
         File info = new File(FileUtils.appendFileSeparator(outputDirectory.getPath()) + "info");
         int pageCount = 0;
-        if (!pdf.exists() && !info.exists()) {
-
+        if (!info.exists()) {
             PdfReader reader = new PdfReader(pdfPath);
             pageCount = reader.getNumberOfPages();
-
-            // if pdf is a encrypted file unencrypted
-            if (reader.isEncrypted()) {
-                LOGGER.debug("encrypted pdf! 准备另存");
-                pdfPath = PDFSecurer.decrypt(reader, FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf").getPath();
-                LOGGER.debug("PDF解密完成");
-            } else {
-                LOGGER.debug("---文档未加密---");
+            File decryptedPdf = new File(FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf");
+            if(!decryptedPdf.exists()){ 
+                // if pdf is a encrypted file unencrypted
+                if (reader.isEncrypted()) {
+                    LOGGER.debug("encrypted pdf! 准备另存");
+                    pdfPath = PDFSecurer.decrypt(reader, FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf").getPath();
+                    LOGGER.debug("PDF解密完成");
+                } else {
+                    LOGGER.debug("---文档未加密---");
+                }
+            }else {
+                pdfPath = decryptedPdf.getPath();
             }
 
             reader.close();
@@ -170,7 +173,6 @@ public class PDFConverter {
 
             }
         } else {
-            pdfPath = pdf.getPath();
             FileInputStream in = new FileInputStream(info);
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
