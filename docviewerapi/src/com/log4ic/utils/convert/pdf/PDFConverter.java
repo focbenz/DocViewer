@@ -133,13 +133,13 @@ public class PDFConverter {
         }
 
         outPath = FileUtils.appendFileSeparator(outputDirectory.getPath());
-        
+        File decryptedPdf = new File(FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf");
         File info = new File(FileUtils.appendFileSeparator(outputDirectory.getPath()) + "info");
         int pageCount = 0;
         if (!info.exists()) {
             PdfReader reader = new PdfReader(pdfPath);
             pageCount = reader.getNumberOfPages();
-            File decryptedPdf = new File(FileUtils.getFilePrefix(pdfFile) + "_decrypted.pdf");
+            
             if(!decryptedPdf.exists()){ 
                 // if pdf is a encrypted file unencrypted
                 if (reader.isEncrypted()) {
@@ -173,6 +173,8 @@ public class PDFConverter {
 
             }
         } else {
+            pdfPath = decryptedPdf.getPath();
+            
             FileInputStream in = new FileInputStream(info);
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(in, "UTF-8"));
