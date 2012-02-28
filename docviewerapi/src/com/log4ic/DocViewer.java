@@ -123,7 +123,7 @@ public class DocViewer {
         if (attachmentService == null) {
             synchronized (ATTACHMENT_SERVICE) {
                 if (attachmentService == null) {
-                    Class serviceClass = Class.forName(ATTACHMENT_SERVICE);
+                    Class serviceClass = DocViewer.class.getClassLoader().loadClass(ATTACHMENT_SERVICE);
                     attachmentService = (IAttachmentService) serviceClass.newInstance();
                 }
             }
