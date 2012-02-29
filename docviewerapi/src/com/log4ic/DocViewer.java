@@ -6,7 +6,6 @@ import com.log4ic.utils.convert.*;
 import com.log4ic.utils.convert.office.OfficeConverter;
 import com.log4ic.utils.convert.pdf.PDFConverter;
 import com.log4ic.utils.io.FileUtils;
-import com.log4ic.utils.io.filter.SplitSwfFileFilter;
 import com.log4ic.utils.security.XXTEA;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
@@ -512,7 +511,7 @@ public class DocViewer {
             File dir = new File(OUTPUT_PATH + id + File.separator);
             if (isSplitPage()) {
                 if (dir.exists()) {
-                    if (dir.listFiles(new SplitSwfFileFilter()).length == getDocPageCount(id, false)) {
+                    if (getDocPageCount(id, false) > 0) {
                         return true;
                     }
                 }
