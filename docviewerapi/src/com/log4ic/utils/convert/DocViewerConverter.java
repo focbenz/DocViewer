@@ -16,7 +16,7 @@ import java.util.LinkedList;
 public class DocViewerConverter {
     private static OfficeConverter officeConverter;
     private static PDFConverter pdfConverter;
-    private static Object lock = new Object();
+    private static final Object lock = new Object();
 
     private static LinkedList<File> runningQueue = new LinkedList<File>();
 
