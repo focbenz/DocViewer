@@ -470,15 +470,8 @@ public class DocViewer {
 
         File dir = new File(OUTPUT_PATH + id);
 
-        if (!dir.exists()) {
-            return false;
-        }
+        return dir.exists() && dir.isDirectory();
 
-        if (dir.isDirectory()) {
-            return true;
-        }
-
-        return false;
     }
 
 
@@ -490,11 +483,8 @@ public class DocViewer {
 
         File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
 
-        if (!file.exists()) {
-            return false;
-        }
+        return file.exists();
 
-        return true;
     }
 
     /**
