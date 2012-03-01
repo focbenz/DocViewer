@@ -248,10 +248,7 @@ public class DocViewer {
 
     private synchronized static boolean checkWorker(ConvertWorker worker) throws Exception {
         worker.setOutputPath(OUTPUT_PATH);
-        if (worker.getInFile() == null) {
-            return false;
-        }
-        return true;
+        return worker.getInFile() != null;
     }
 
     public synchronized static void addConvertWorker(PDFConvertWorker worker) throws Exception {
