@@ -171,21 +171,18 @@ public class OfficeConverter {
             LOGGER.debug("准备启动服务....");
             configuration.setOfficeHome(getOfficeHome());
             configuration.setPortNumber(getPort());
-            officeManager = configuration.buildOfficeManager();
             if (CONNECTION_PROTOCOL != null) {
                 configuration.setConnectionProtocol(CONNECTION_PROTOCOL);
             }
             if (OFFICE_PROFILE != null) {
                 configuration.setTemplateProfileDir(OFFICE_PROFILE);
             }
+            officeManager = configuration.buildOfficeManager();
             officeManager.start();
             LOGGER.debug("office转换服务启动成功!");
         } catch (Exception ce) {
             LOGGER.error("office转换服务启动失败!详细信息:" + ce);
-        } finally {
-
         }
-
     }
 
     public static void stopService() {
