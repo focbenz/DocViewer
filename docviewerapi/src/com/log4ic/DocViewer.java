@@ -244,6 +244,8 @@ public class DocViewer {
 
     public static void destroy() throws Exception {
         OfficeConverter.stopService();
+        officeQueue.safeShutdown();
+        pdfQueue.safeShutdown();
     }
 
     private synchronized static boolean checkWorker(ConvertWorker worker) throws Exception {

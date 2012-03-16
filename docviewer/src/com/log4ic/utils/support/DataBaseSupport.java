@@ -5,12 +5,14 @@ import com.log4ic.utils.io.scanner.FileScanner;
 import com.log4ic.utils.support.scanner.filter.AnnotationFilter;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Logger;
 
 import javax.naming.NamingException;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import java.sql.Driver;
+import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Enumeration;
 import java.util.List;
 
 /**
@@ -49,12 +51,22 @@ public class DataBaseSupport implements ServletContextListener {
         } catch (InstantiationException e) {
             LOGGER.error(e);
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            LOGGER.error(e);
         }
 
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
+        Enumeration<Driver> drivers = DriverManager.getDrivers();
+        while (drivers.hasMoreElements()) {
+            Driver driver = drivers.nextElement();
+            try {
+                DriverManager.deregisterDriver(driver);
+                LOGGER.debug("deregistering jdbc driver:" + driver);
+            } catch (SQLException e) {
+                LOGGER.error(e);
+            }
+        }
 
     }
 }
