@@ -65,12 +65,10 @@ public class PDFConverter {
                     String line = null;
 
                     while ((line = br.readLine()) != null) {
-                        if (line != null) {
-                            if (outResources != null) {
-                                outResources.add(line);
-                            }
-                            LOGGER.debug(line);
+                        if (outResources != null) {
+                            outResources.add(line);
                         }
+                        LOGGER.debug(line);
                     }
                 } catch (IOException e) {
                     LOGGER.error(e);
@@ -85,11 +83,9 @@ public class PDFConverter {
 
                     String line = null;
                     while ((line = br.readLine()) != null) {
-                        if (line != null) {
-                            LOGGER.debug(line);
-                            if (outResources != null) {
-                                outResources.add(line);
-                            }
+                        LOGGER.debug(line);
+                        if (outResources != null) {
+                            outResources.add(line);
                         }
                     }
                 } catch (IOException e) {
@@ -204,7 +200,7 @@ public class PDFConverter {
 
             item = outResources.get(i);
 
-            if (errorMsg == false) {
+            if (!errorMsg) {
 
                 if (item.lastIndexOf(PDFConvertErrorType.COMPLEX.getErrorMessage()) > -1) {
                     errorMsg = true;
@@ -229,7 +225,7 @@ public class PDFConverter {
     private void errorHandler(String command, final File pdfFile, final String outPath, boolean splitPage, boolean poly2bitmap, List<String> outResources) throws Exception {
         // 如果第一次没有将图片转换成点阵图报错，则进行第二次转换，并将图片转换成点阵
         final PDFConvertError error = checkError(outResources);
-        if (error.getType() == PDFConvertErrorType.COMPLEX && poly2bitmap != true) {
+        if (error.getType() == PDFConvertErrorType.COMPLEX && !poly2bitmap) {
             LOGGER.debug("---第一次转换失败，进行第二次转换 poly2bitmap = true ---");
             if (splitPage) {
                 new Thread() {
@@ -287,15 +283,14 @@ public class PDFConverter {
         int pageCount = deploy.getPageCount();
 
         for (int i = startPage; i <= (endPage == null || endPage > pageCount ? pageCount : endPage); i++) {
-            final int nowPage = i;
-            final String commandExec = command += " -p " + nowPage;
+            final String commandExec = command += " -p " + i;
             Thread t = new Thread() {
                 public void run() {
                     List<String> outResources = new ArrayList<String>();
                     try {
                         if (execCommand(commandExec, outResources) != 0) {
                             PDFConvertError error = checkError(outResources);
-                            if (error.getType() == PDFConvertErrorType.COMPLEX && poly2bitmap != true) {
+                            if (error.getType() == PDFConvertErrorType.COMPLEX && !poly2bitmap) {
                                 LOGGER.debug("---第一次转换失败，进行第二次转换---");
                                 execCommand(commandExec + " -s poly2bitmap", outResources);
                             } else if (error.getType() != PDFConvertErrorType.NONE) {

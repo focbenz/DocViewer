@@ -288,7 +288,7 @@ public class DocViewer {
 
     private static final ConvertQueue officeQueue = new ConvertQueue(OFFICE_POOL_MAX_THREAD, "office_queue");
     private static final ConvertQueue pdfQueue = new ConvertQueue(PDF_POOL_MAX_THREAD, "pdf_queue");
-
+    private static final byte[] lock = new byte[0];
 
     /**
      * 获取转换后的文档目录 如果没有转换则进行转换
@@ -298,12 +298,18 @@ public class DocViewer {
      * @throws Exception
      */
     public static File getDoc(int id) throws Exception {
-        if (DocViewer.isConverting(id) || hasDoc(id)) {
-            while (DocViewer.isConverting(id)) {
-                Thread.sleep(500);
+        synchronized (lock) {
+            if (DocViewer.isConverting(id) || hasDoc(id)) {
+                while (DocViewer.isConverting(id)) {
+                    LOGGER.debug(id + " Waiting other converting...");
+                    lock.wait();
+                }
+
+                LOGGER.debug(id + " return doc");
+                return new File(OUTPUT_PATH + id);
             }
-            return new File(OUTPUT_PATH + id);
         }
+
         ConvertWorker worker = null;
         if (pdfQueue.isWaiting(id)) {
             worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
@@ -318,7 +324,7 @@ public class DocViewer {
             }
         }
 
-        File in = null;
+        File in;
 
         if (worker != null) {
             in = worker.getInFile();
@@ -330,34 +336,57 @@ public class DocViewer {
             return null;
         }
 
-        return DocViewerConverter.toSwf(in, OUTPUT_PATH);
+        synchronized (lock) {
+            if (DocViewer.isConverting(id) || hasDoc(id)) {
+                while (DocViewer.isConverting(id)) {
+                    LOGGER.debug(id + " Waiting other converting...");
+                    lock.wait();
+                }
+                LOGGER.debug(id + " return doc");
+                return new File(OUTPUT_PATH + id);
+            }
+        }
+        File file;
+        try {
+            file = DocViewerConverter.toSwf(in, OUTPUT_PATH);
+        } finally {
+            synchronized (lock) {
+                lock.notifyAll();
+            }
+        }
+        return file;
     }
 
     public synchronized static boolean isConverting(int id) {
-
-        LinkedList<File> fileList = DocViewerConverter.getRunningQueue();
-
-        synchronized (fileList) {
+        DocViewerConverter.getRunningQueueLock().lock();
+        try {
+            LinkedList<File> fileList = DocViewerConverter.getRunningQueue();
             for (File f : fileList) {
-                if (FileUtils.getFilePrefix(f).equals(id + "")) {
+                if (FileUtils.getFilePrefix(f).equals(id)) {
                     return true;
                 }
             }
+        } finally {
+            DocViewerConverter.getRunningQueueLock().unlock();
         }
-
         return officeQueue.isRunning(id) || pdfQueue.isRunning(id);
     }
 
     public static File getPDFDoc(int id) throws Exception {
-        if (DocViewer.hasDocDir(id)) {
-            while (DocViewer.isConverting(id)) {
-                Thread.sleep(500);
-            }
-            File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
-            if (file.exists()) {
-                return file;
+        synchronized (lock) {
+            if (DocViewer.isConverting(id) || DocViewer.hasDocDir(id)) {
+                while (DocViewer.isConverting(id)) {
+                    LOGGER.debug(id + " Waiting other converting...");
+                    lock.wait();
+                }
+                File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
+                if (file.exists()) {
+                    LOGGER.debug(id + " return doc");
+                    return file;
+                }
             }
         }
+
         ConvertWorker worker = null;
         if (pdfQueue.isWaiting(id)) {
             worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
@@ -367,7 +396,7 @@ public class DocViewer {
 
         }
 
-        File in = null;
+        File in;
 
         if (worker != null) {
             in = worker.getInFile();
@@ -375,7 +404,30 @@ public class DocViewer {
             in = getDocFileFromSource(id);
         }
 
-        return DocViewerConverter.toPDF(in, OUTPUT_PATH);
+        synchronized (lock) {
+            if (DocViewer.isConverting(id) || DocViewer.hasDocDir(id)) {
+                while (DocViewer.isConverting(id)) {
+                    LOGGER.debug(id + " Waiting other converting...");
+                    lock.wait();
+                }
+                File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
+                if (file.exists()) {
+                    LOGGER.debug(id + " return doc");
+                    return file;
+                }
+            }
+        }
+
+        File file;
+        try {
+            file = DocViewerConverter.toPDF(in, OUTPUT_PATH);
+        } finally {
+            synchronized (lock) {
+                lock.notifyAll();
+            }
+        }
+
+        return file;
     }
 
     /**
