@@ -14,10 +14,9 @@ import org.artofsolving.jodconverter.document.DocumentFormat;
 import org.artofsolving.jodconverter.office.OfficeConnectionProtocol;
 
 import java.io.*;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Random;
+import java.util.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author: 张立鑫
@@ -288,6 +287,7 @@ public class DocViewer {
 
     private static final ConvertQueue officeQueue = new ConvertQueue(OFFICE_POOL_MAX_THREAD, "office_queue");
     private static final ConvertQueue pdfQueue = new ConvertQueue(PDF_POOL_MAX_THREAD, "pdf_queue");
+    private static Map<String, Lock> fileIds = new HashMap<String, Lock>();
     private static final byte[] lock = new byte[0];
 
     /**
@@ -298,63 +298,58 @@ public class DocViewer {
      * @throws Exception
      */
     public static File getDoc(int id) throws Exception {
-        synchronized (lock) {
-            if (DocViewer.isConverting(id) || hasDoc(id)) {
-                while (DocViewer.isConverting(id)) {
-                    LOGGER.debug(id + " Waiting other converting...");
-                    lock.wait();
-                }
-
-                LOGGER.debug(id + " return doc");
-                return new File(OUTPUT_PATH + id);
-            }
+        if (hasDoc(id)) {
+            LOGGER.debug(id + " return doc");
+            return new File(OUTPUT_PATH + id);
         }
 
-        ConvertWorker worker = null;
-        if (pdfQueue.isWaiting(id)) {
-            worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
-            if (worker != null) {
-                pdfQueue.removeWaitingWorker(worker);
-            }
+        String docId = id + "_doc";
 
-        } else if (officeQueue.isWaiting(id)) {
-            worker = (ConvertWorker) officeQueue.getWaitingWorker(id);
-            if (worker != null) {
-                officeQueue.removeWaitingWorker(worker);
-            }
-        }
-
-        File in;
-
-        if (worker != null) {
-            in = worker.getInFile();
-        } else {
-            in = getDocFileFromSource(id);
-        }
-
-        if (in == null) {
-            return null;
-        }
-
-        synchronized (lock) {
-            if (DocViewer.isConverting(id) || hasDoc(id)) {
-                while (DocViewer.isConverting(id)) {
-                    LOGGER.debug(id + " Waiting other converting...");
-                    lock.wait();
-                }
-                LOGGER.debug(id + " return doc");
-                return new File(OUTPUT_PATH + id);
-            }
-        }
-        File file;
-        try {
-            file = DocViewerConverter.toSwf(in, OUTPUT_PATH);
-        } finally {
+        if (!fileIds.containsKey(docId)) {
             synchronized (lock) {
-                lock.notifyAll();
+                if (!fileIds.containsKey(docId)) {
+                    fileIds.put(docId, new ReentrantLock());
+                }
             }
         }
-        return file;
+        Lock lk = fileIds.get(docId);
+
+        lk.lock();
+        try {
+            if (hasDoc(id)) {
+                LOGGER.debug(id + " return doc");
+                return new File(OUTPUT_PATH + id);
+            }
+            ConvertWorker worker = null;
+            if (pdfQueue.isWaiting(id)) {
+                worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
+                if (worker != null) {
+                    pdfQueue.removeWaitingWorker(worker);
+                }
+
+            } else if (officeQueue.isWaiting(id)) {
+                worker = (ConvertWorker) officeQueue.getWaitingWorker(id);
+                if (worker != null) {
+                    officeQueue.removeWaitingWorker(worker);
+                }
+            }
+
+            File in;
+
+            if (worker != null) {
+                in = worker.getInFile();
+            } else {
+                in = getDocFileFromSource(id);
+            }
+
+            if (in == null) {
+                return null;
+            }
+            return DocViewerConverter.toSwf(in, OUTPUT_PATH);
+        } finally {
+            lk.unlock();
+            fileIds.remove(docId);
+        }
     }
 
     public synchronized static boolean isConverting(int id) {
@@ -373,61 +368,59 @@ public class DocViewer {
     }
 
     public static File getPDFDoc(int id) throws Exception {
-        synchronized (lock) {
-            if (DocViewer.isConverting(id) || DocViewer.hasDocDir(id)) {
-                while (DocViewer.isConverting(id)) {
-                    LOGGER.debug(id + " Waiting other converting...");
-                    lock.wait();
-                }
-                File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
-                if (file.exists()) {
-                    LOGGER.debug(id + " return doc");
-                    return file;
-                }
+        if (DocViewer.hasDocDir(id)) {
+            File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
+            if (file.exists()) {
+                LOGGER.debug(id + " return pdf");
+                return file;
             }
         }
 
-        ConvertWorker worker = null;
-        if (pdfQueue.isWaiting(id)) {
-            worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
-            if (worker != null) {
-                pdfQueue.removeWaitingWorker(worker);
-            }
-
-        }
-
-        File in;
-
-        if (worker != null) {
-            in = worker.getInFile();
-        } else {
-            in = getDocFileFromSource(id);
-        }
-
-        synchronized (lock) {
-            if (DocViewer.isConverting(id) || DocViewer.hasDocDir(id)) {
-                while (DocViewer.isConverting(id)) {
-                    LOGGER.debug(id + " Waiting other converting...");
-                    lock.wait();
-                }
-                File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
-                if (file.exists()) {
-                    LOGGER.debug(id + " return doc");
-                    return file;
-                }
-            }
-        }
-
-        File file;
-        try {
-            file = DocViewerConverter.toPDF(in, OUTPUT_PATH);
-        } finally {
+        String pdfId = id + "_pdf";
+        if (!fileIds.containsKey(pdfId)) {
             synchronized (lock) {
-                lock.notifyAll();
+                if (!fileIds.containsKey(pdfId)) {
+                    fileIds.put(pdfId, new ReentrantLock());
+                }
             }
         }
+        Lock lk = fileIds.get(pdfId);
 
-        return file;
+        lk.lock();
+        try {
+            if (DocViewer.hasDocDir(id)) {
+                File file = new File(OUTPUT_PATH + id + File.separator + id + ".pdf");
+                if (file.exists()) {
+                    LOGGER.debug(id + " return pdf");
+                    return file;
+                }
+            }
+            ConvertWorker worker = null;
+            if (pdfQueue.isWaiting(id)) {
+                worker = (ConvertWorker) pdfQueue.getWaitingWorker(id);
+                if (worker != null) {
+                    pdfQueue.removeWaitingWorker(worker);
+                }
+
+            }
+
+            File in;
+
+            if (worker != null) {
+                in = worker.getInFile();
+            } else {
+                in = getDocFileFromSource(id);
+            }
+
+
+            if (in == null) {
+                return null;
+            }
+            return DocViewerConverter.toPDF(in, OUTPUT_PATH);
+        } finally {
+            lk.unlock();
+            fileIds.remove(pdfId);
+        }
     }
 
     /**
