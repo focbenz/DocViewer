@@ -171,8 +171,8 @@ public class OfficeConverter {
             LOGGER.debug("准备启动服务....");
             configuration.setOfficeHome(getOfficeHome());
             configuration.setPortNumbers(getPort());
-            configuration.setTaskExecutionTimeout(1000 * 60 * 60 * 5L);
-            configuration.setTaskQueueTimeout(1000 * 60 * 60 * 60 * 24L);
+            configuration.setTaskExecutionTimeout(1000 * 60 * 5L);
+            configuration.setTaskQueueTimeout(1000 * 60 * 60 * 24L);
             if (CONNECTION_PROTOCOL != null) {
                 configuration.setConnectionProtocol(CONNECTION_PROTOCOL);
             }
