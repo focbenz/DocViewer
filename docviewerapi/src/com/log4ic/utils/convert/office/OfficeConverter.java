@@ -44,7 +44,7 @@ public class OfficeConverter {
     /**
      * 远程地址端口
      */
-    private static int PORT = 8100;
+    private static int[] PORT = {8100};
 
     private static DocumentFormatRegistry documentFormatRegistry = null;
 
@@ -170,7 +170,9 @@ public class OfficeConverter {
         try {
             LOGGER.debug("准备启动服务....");
             configuration.setOfficeHome(getOfficeHome());
-            configuration.setPortNumber(getPort());
+            configuration.setPortNumbers(getPort());
+            configuration.setTaskExecutionTimeout(1000 * 60 * 60 * 5L);
+            configuration.setTaskQueueTimeout(1000 * 60 * 60 * 60 * 24L);
             if (CONNECTION_PROTOCOL != null) {
                 configuration.setConnectionProtocol(CONNECTION_PROTOCOL);
             }
@@ -202,7 +204,7 @@ public class OfficeConverter {
         return HOST;
     }
 
-    public static int getPort() {
+    public static int[] getPort() {
         return PORT;
     }
 
@@ -211,7 +213,7 @@ public class OfficeConverter {
         LOGGER.debug("设置office目录为：" + OfficeConverter.OFFICE_HOME);
     }
 
-    public static void setPort(int port) {
+    public static void setPort(int[] port) {
         LOGGER.debug("设置office转换服务端口为：" + port);
         OfficeConverter.PORT = port;
     }

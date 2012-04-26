@@ -156,7 +156,17 @@ public class DocViewer {
         LOGGER.debug("初始化office转换服务配置....");
         OfficeConverter.setOfficeHome(new String(properties.getProperty(baseOfficeConfigSpace + "home", OfficeConverter.getOfficeHome()).getBytes("ISO-8859-1"), "UTF-8"));
         //OfficeConverter.setHost(new String(properties.getProperty(baseOfficeConfigSpace + "host", OfficeConverter.getHost()).getBytes("ISO-8859-1"), "UTF-8"));
-        OfficeConverter.setPort(Integer.parseInt(properties.getProperty(baseOfficeConfigSpace + "port", OfficeConverter.getPort() + "")));
+        String portStr = properties.getProperty(baseOfficeConfigSpace + "port");
+        if(StringUtils.isNotBlank(portStr)){
+            String[] portStrs = portStr.split(",");
+            int[] ports = new int[portStrs.length];
+            int i = 0;
+            for(String s : portStrs){
+                ports[i] = Integer.parseInt(s);
+                i++;
+            }
+            OfficeConverter.setPort(ports);
+        }
         String protocol = properties.getProperty(baseOfficeConfigSpace + "protocol");
         if (StringUtils.isNotBlank(protocol)) {
             protocol = protocol.toLowerCase();
